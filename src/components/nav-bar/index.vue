@@ -12,12 +12,13 @@
                 <img src="../../../public/img/logo.svg" alt="">
             </a>
             <ul>
-                <li class="active">Home</li>
-                <li>News</li>
+                <router-link to="/" class="active">Bosh sahifa</router-link>
+    <router-link to="/second">Ikkinchi sahifa</router-link>
                 <li>Podcast</li>
                 <li>Resources</li>
             </ul>
             <button>Contact Us</button>
+            <img class="burger-menu" src="../../../public/img/burger.svg" alt="">
         </div>
     </Container>
 </div>
@@ -91,6 +92,24 @@
         border: 1px solid #FFD11A;
         background-color: transparent;
         color: white;
+    }
+    .burger-menu{
+        display: none;
+    }
+    @media(max-width:770px){
+        .nav-bar-wrapper > ul{
+            display: none;
+        }
+        .nav-bar-wrapper > button{
+            display: none;
+        }
+        .burger-menu{
+            display: block;
+            cursor: pointer;
+        }
+        .nav-bar-top > p{
+            font-size: 12px;
+        }
     }
 </style>
 

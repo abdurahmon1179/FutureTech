@@ -94,7 +94,7 @@
     </Container>
 </template>
 
-<style scoped>
+<style scoped>   
 footer {
     margin: 80px 0px 40px 0;
 }
@@ -175,6 +175,7 @@ footer {
 .footer-bottom-text > p{
     font-family: Inter;
     color: #666666;
+
     font-size: 18px;
 }
 .footer-bottom{

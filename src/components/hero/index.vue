@@ -92,7 +92,7 @@ import Container from "../layout/index.vue"
     padding-right: 50px;
     border-right: 1px solid #262626;
     height: 100%;
-    width: 960px;
+    max-width: 960px;
 }
 
 .hero-title>h3 {
@@ -118,7 +118,7 @@ import Container from "../layout/index.vue"
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
-    width: 900px;
+    max-width: 900px;
     line-height: 150%;
     padding-bottom: 50px;
 }
@@ -174,6 +174,7 @@ import Container from "../layout/index.vue"
 }
 .hero-wrapper{
     display: flex;
+
 }
 .hero-resource{
     position: relative;
@@ -244,5 +245,8 @@ import Container from "../layout/index.vue"
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@media(max-width:1400px){
+
 }
 </style>
