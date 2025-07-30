@@ -44,7 +44,7 @@
     </div>
     
     <Container class="news-wrap">
-        <div class="card-news">
+        <div class="card-news first">
             <img src="../../../public/img/news1.svg" alt="">
             <div class="card-news-text">
                 <div>
@@ -56,7 +56,8 @@
             <p>Over 1,000 articles published monthly</p>
         </div>
         <img src="../../../public/img/newsrow.svg" alt="">
-        <div class="card-news">
+        <span class="line"></span>
+        <div class="card-news second">
             <img src="../../../public/img/news1.svg" alt="">
             <div class="card-news-text">
                 <div>
@@ -68,7 +69,8 @@
             <p>Over 1,000 articles published monthly</p>
         </div>
         <img src="../../../public/img/newsrow.svg" alt="">
-        <div class="card-news">
+        <span class="line"></span>
+        <div class="card-news last">
             <img src="../../../public/img/news1.svg" alt="">
             <div class="card-news-text">
                 <div>
@@ -188,8 +190,10 @@ import Container from "../layout/index.vue"
     width: 330px;
 }
 .resource-wrap{
-    padding: 395px 0px 47px 80px;
+    padding: 395px 0px 47px ;
+    padding-left: 70px;
     font-family: Inter;
+    max-width: 100%;
 }
 .resource-wrap > img{
     margin-bottom: 30px;
@@ -204,7 +208,7 @@ import Container from "../layout/index.vue"
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 30px;
-    max-width: 440px;
+    width: 440px;
 }
 .resource-wrap > button{
     padding: 18px 24px;
@@ -249,10 +253,239 @@ import Container from "../layout/index.vue"
     align-items: center;
     justify-content: space-between;
 }
+.line{
+    display: none;
+}
 @media(max-width:1400px){
+    .hero-wrapper{
+        flex-direction: column;
+    }
+    .hero-title{
+        border-right: 0;
+        padding-top: 100px;
+    }
+    .custom{
+        padding-left: 100px;
+    }
+    .hero-title{
+        width: 800px;
+    }
+    .card-wrapper{
+        width: 100%;
+    }
+    .resource-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -100px;
+        width: 100%;
+        padding-left: 0;
+    }
+    .resource-wrap > button{
+        padding: 20px 42px;
+    }
+    .resource-wrap > h3{
+        font-size: 45px;
+    }
+    .resource-wrap > p{
+        font-size: 20px;
+        width: 590px;
+    }
+    .resource-wrap > img{
+        z-index: 100;
+    }
+    .news-wrap{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .card-news-text{
+        width: 350px;
+    }
+}
+@media (max-width:1160px){
+    .card-news-text > div > h3{
+        font-size: 16px;
+    }
+    .card-news-text > div > p{
+        font-size: 16px;
+    }
+    .card-news-text > img{
+        width: 40px;
+        height: 40px;
+    }
+    .card-news-text{
+        width: 300px;
+    }
+    .card-news > p{
+        font-size: 17px;
+    }
+}
+@media (max-width:1000px){
+    .card-news-text > div > h3{
+        font-size: 15px;
+    }
+    .card-news-text > div > p{
+        font-size: 15px;
+    }
+    .card-news-text{
+        width: 270px;
+    }
+    .card-news > p{
+        font-size: 15px;
+    }
+}
+@media (max-width:980px){ 
     .hero-title > h1{
-        font-size: 55px;
-        width: 0px;
+        font-size: 40px;
+    }
+    .hero-title > h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+        width: 100% !important;
+    }
+    .custom{
+        width: 100%;
+    }
+    .hero-title > p{
+        font-size: 16px;
+        width: 500px;
+    }
+}
+@media (max-width:865px){
+    .news-wrap{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .news-wrap > img{
+       display: none;
+    }
+   .line {
+     display: flex;
+     width: 100%;
+     height: 1px; 
+     background-color: #666666; 
+     margin-bottom: 100px;
+     margin-top: 100px;
+    }
+
+    .card-news{
+        margin-bottom: 100px;
+        margin-top: 600px;
+        width: 100%;
+        padding: 10px;
+    }  
+    .card-news-text{
+        width: 100%;
+    }
+    .card-news-text > div > h3{
+        font-size: 30px;
+    }
+    .card-news-text > div > p{
+        font-size: 25px;
+    }
+    .card-news > p{
+     font-size: 20px;   
+    }
+    .first{
+        margin-top: 30px;
+        margin-bottom: -70px;
+    }  
+    .second{
+        margin-bottom: -7px;
+        margin-top: -70px;
+    }
+    .last{
+        margin-top: -70px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:810px){
+    .card > p{
+        font-size: 16px;
+    }
+    .card > h3{
+        font-size: 30px;
+    }
+}
+@media (max-width:790px){
+    .custom{
+        padding-left: 40px;
+    }
+}
+@media (max-width:685px){
+    .hero-title > h1{
+        font-size: 25px;
+    }
+    .hero-title > h3{
+        font-size: 16px;
+    }
+    .hero-title > p{
+        font-size: 14px;
+        width: 400px;
+    }
+    .resource-wrap > h3{
+        font-size: 30px;
+    }
+    .resource-wrap > p{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media (max-width:600px){
+    .custom{
+        padding-left: 20px;
+    }
+    .hero-title > h1{
+        width: 400px;
+        line-height: 150%;
+    }
+}
+@media (max-width:530px){
+    .card1{
+        padding: 30px;
+    }
+    .card2{
+        padding: 30px;
+    }
+    .card3{
+        padding: 30px;
+    }
+    .card > p{
+        font-size: 14px;
+    }
+    .card > h3{
+        font-size: 25px;
+    }
+     .resource-wrap > h3{
+        font-size: 25px;
+    }
+    .resource-wrap > p{
+        font-size: 13px;
+        text-align: center;
+    }
+    .resource-wrap > button{
+        padding: 15px 20px;
+    }
+}
+@media (max-width:430px){
+    .hero-title > h1{
+        width: 350px;
+    }
+    .hero-title > p{
+        width: 300px;
+    }
+    .card1{
+        padding: 20px;
+    }
+    .card2{
+        padding: 20px;
+    }
+    .card3{
+        padding: 20px;
+    }
+    .resource-wrap > p{
+        font-size: 12px;
     }
 }
 </style>
