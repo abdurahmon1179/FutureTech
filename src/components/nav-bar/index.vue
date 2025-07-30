@@ -12,8 +12,8 @@
                 <img src="../../../public/img/logo.svg" alt="">
             </a>
             <ul>
-                <router-link to="/" class="active">Bosh sahifa</router-link>
-    <router-link to="/second">Ikkinchi sahifa</router-link>
+                <router-link to="/" class="active link">Bosh sahifa</router-link>
+                <router-link to="/second" class="link" style="color: #98989A;">Ikkinchi sahifa</router-link>
                 <li>Podcast</li>
                 <li>Resources</li>
             </ul>
@@ -25,6 +25,9 @@
 </template>
 
 <style scoped>
+    .link{
+        text-decoration: none;
+    }
     .nav-bar-top{
         display: flex;
         align-items: center;
@@ -111,6 +114,10 @@
             font-size: 12px;
         }
     }
+    router-link{
+        color: red;
+    }
+
 </style>
 
 <script setup>

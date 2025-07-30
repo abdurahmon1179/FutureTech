@@ -1,7 +1,7 @@
 <template>
     <div class="hero-wrapper">
         <div>
-            <Container style="padding-left: 40px;">
+            <Container class="custom">
                 <div class="hero-title">
                     <h3>Your Journey to Tomorrow Begins Here</h3>
                     <h1>Explore the Frontiers of Artificial Intelligence</h1>
@@ -112,7 +112,10 @@ import Container from "../layout/index.vue"
     margin-bottom: 20px;
     width: 780px;
 }
-
+.custom{
+    width: 1000px;
+    padding-left: 40px;
+}
 .hero-title>p {
     color: #666666;
     font-family: Inter;
@@ -201,7 +204,7 @@ import Container from "../layout/index.vue"
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 30px;
-    width: 440px;
+    max-width: 440px;
 }
 .resource-wrap > button{
     padding: 18px 24px;
@@ -247,6 +250,9 @@ import Container from "../layout/index.vue"
     justify-content: space-between;
 }
 @media(max-width:1400px){
-
+    .hero-title > h1{
+        font-size: 55px;
+        width: 0px;
+    }
 }
 </style>

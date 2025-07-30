@@ -6,7 +6,7 @@
 
 <style scoped>
 .container {
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     overflow: visible;
 }
