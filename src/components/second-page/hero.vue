@@ -42,7 +42,7 @@
         </div>
     </Container>
     <hr>
-    <Container>
+    <Container class="container">
         <div class="news-wrapper">
             <div class="card-news">
                 <img src="../../../public/img/new.svg" alt="">
@@ -209,7 +209,7 @@ hr{
     gap: 10px;
 }
 .card-news-active > button{
-    padding: 18px 77.5px;
+    padding: 18px 60px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -227,6 +227,17 @@ hr{
     .container{
         width: 100%;
         padding: 0 40px;
+    }
+    .news-wrapper{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .card-news{
+        /* background-color: green; */
+    }
+    .card-news-active > button{
+        padding: 18px 70px;
     }
 }
 @media(max-width:1175px){
@@ -289,15 +300,18 @@ hr{
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 
+.card-content{
+    margin-top: -50px;
+}
 
 .news-card-wrapper > img{
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: contain;
     display: block;
+
 }
 
 }
@@ -322,6 +336,28 @@ hr{
     }
     .news-title > div > h1{
         font-size: 30px;
+    }
+}
+@media (max-width:500px){
+    .card-news > img{
+        width: 400px;
+    }
+    .card-news > p{
+        font-size: 16px;
+    }
+    .card-content > span{
+        font-size: 16px;
+    }
+    .card-news-active > button{
+        padding: 18px 30px;
+    }
+}
+@media (max-width:430px){
+    .card-news > img{
+        width: 350px;
+    }
+    .card-news-active > button{
+        padding: 18px;
     }
 }
 </style>

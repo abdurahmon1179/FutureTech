@@ -12,9 +12,10 @@
         <div class="aboutus-title second">
             <div class="title-logo">
                 <img src="../../../public/img/aboutus.svg" alt="">
-                <span>Learn, Connect, and Innovate</span>
+                
             </div>
             <div class="aboutus-title-text">
+                <span>Learn, Connect, and Innovate</span>
                 <h2>Be Part of the Future Tech Revolution</h2>
                 <p>Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.</p>
             </div>
@@ -114,6 +115,9 @@ section{
     font-size: 22px;
     font-weight: 600;
 }
+.second{
+    display: none;
+}
 @media (max-width:1400px){
     .container{
         width: 100%;
@@ -138,6 +142,7 @@ section{
     .second{
         display: none;
     }
+    
 }
 @media (max-width:880px){
     .first{
