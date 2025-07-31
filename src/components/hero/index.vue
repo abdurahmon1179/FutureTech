@@ -441,6 +441,17 @@ import Container from "../layout/index.vue"
         line-height: 150%;
     }
 }
+@media (max-width:585px){
+    .card-news-text > div > h3{
+        font-size: 25px;
+    }
+    .card-news-text > div > p{
+        font-size: 16px;
+    }
+    .card-news > p{
+        font-size: 16px;
+    }
+}
 @media (max-width:530px){
     .card1{
         padding: 30px;
@@ -486,6 +497,17 @@ import Container from "../layout/index.vue"
     }
     .resource-wrap > p{
         font-size: 12px;
+    }
+
+
+    .card-news-text > div > h3{
+        font-size: 20px;
+    }
+    .card-news-text > div > p{
+        font-size: 14px;
+    }
+    .card-news > p{
+        font-size: 14px;
     }
 }
 </style>

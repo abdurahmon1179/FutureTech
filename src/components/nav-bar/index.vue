@@ -1,12 +1,12 @@
 <template>
-<Container>
+<Container class="nav">
     <div class="nav-bar-top">
         <p>Subscribe to our Newsletter For New & latest Blogs and Resources</p>
         <img src="../../../public/img/topstrelka.svg" alt="">
     </div>
 </Container>
 <div class="nav-bar">
-    <Container>
+    <Container class="nav">
         <div class="nav-bar-wrapper">
             <a href="/">
                 <img src="../../../public/img/logo.svg" alt="">
@@ -99,25 +99,30 @@
     .burger-menu{
         display: none;
     }
-    @media(max-width:770px){
-        .nav-bar-wrapper > ul{
-            display: none;
+        @media(max-width:860px){
+            .nav-bar-wrapper > ul{
+                display: none;
+            }
+            .nav-bar-wrapper > button{
+                display: none;
+            }
+            .burger-menu{
+                display: block;
+                cursor: pointer;
+            }
+            .nav-bar-top > p{
+                font-size: 12px;
+            }
         }
-        .nav-bar-wrapper > button{
-            display: none;
-        }
-        .burger-menu{
-            display: block;
-            cursor: pointer;
-        }
-        .nav-bar-top > p{
-            font-size: 12px;
-        }
-    }
-    router-link{
-        color: red;
-    }
 
+    @media (max-width:1440px){
+        .nav-bar-top{
+            max-width: 100%;
+        }
+        .nav{
+            width: 100%;
+        }
+    }
 </style>
 
 <script setup>

@@ -1,6 +1,6 @@
 <template>
 <section>
-    <Container>
+    <Container class="section-container">
         <div class="news-title">
             <div class="title-text">
                 <span >
@@ -15,7 +15,7 @@
         </div>
     </Container>
 </section>
-<Container>
+<Container class="section-container">
     <div class="users-wrapper">
         <div class="user">
             <div class="user-info">
@@ -67,7 +67,7 @@
     </div>
 </Container>
 <hr>
-<Container>
+<Container class="section-container">
     <div class="users-wrapper">
         <div class="user">
             <div class="user-info">
@@ -101,6 +101,7 @@
             </div>
         </div>
         <img src="../../../public/img/row2.svg" alt="">
+
         <div class="user">
             <div class="user-info">
                 <div class="user-img">
@@ -205,6 +206,88 @@ hr {
     background-color: #262626;
     height: 2px;
     border: none;
+}
+@media (max-width:1400px){
+    .section-container{
+        width: 100%;
+        padding: 0px 40px;
+    }
+    .title-text > span {
+        font-size: 16px;
+    }
+    .title-text > h2{
+        font-size: 40px;
+        width: 600px;
+    }
+    .users-wrapper{
+        flex-direction: column;
+    }
+    .user{
+        width: 100%;
+        border-bottom: 2px solid #262626;
+    }
+    .user-comment > img{
+        left: 42%;
+    }
+    .user-comment > p{
+        margin: 0 auto;
+    }
+    .users-wrapper > img{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+}
+@media (max-width:936px){
+    .title-text > h2{
+        font-size: 30px;
+        width: 450px;
+    }
+}
+@media (max-width:788px){
+    section{
+        padding: 80px 0;
+    }
+    .title-text > h2{
+        font-size: 25px;
+        width: 300px;
+    }
+    .news-title > button{
+        padding: 18px;
+        font-size: 16px;
+    }
+}
+@media (max-width:607px){
+    .news-title{
+        flex-direction: column;
+    }
+    .news-title > button{
+        margin-top: 30px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .title-text{
+        width: 100%;
+    }
+    .title-text > h2{
+        font-size: 30px;
+        width: 100%;
+    }
+}
+@media (max-width:550px){
+    .user-comment > img{
+        left: 32%;
+    }
+    .user-comment > p{
+        font-size: 16px;
+        width: 100%;
+    }
+}
+@media (max-width:450px){
+    .user-comment > img{
+        left: 25%;
+    }
 }
 </style>
 

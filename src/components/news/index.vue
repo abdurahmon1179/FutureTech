@@ -1,6 +1,6 @@
 <template>
 <section>
-    <Container>
+    <Container class="title-container">
         <div class="news-title">
             <div class="title-text">
                 <span >
@@ -15,7 +15,7 @@
         </div>
     </Container>
 </section>
-<Container>
+<Container class="body-container">
     <div class="news-line">
         <div class="news-block">
             <img src="../../../public/img/newslogo.svg" alt="">
@@ -64,7 +64,7 @@
     </div>
 </Container>
 <hr>
-<Container>
+<Container class="body-container">
     <div class="news-line">
         <div class="news-block">
             <img src="../../../public/img/newslogo2.svg" alt="">
@@ -317,6 +317,109 @@ hr{
     background-color: #262626;
     height: 3px;
     border: none;
+}
+@media (max-width:1400px){
+    .title-container{
+        width: 100%;
+        padding: 0 40px;
+    }
+    .body-container{
+        width: 100%;
+        padding: 0 40px;
+    }
+    .title-text > h2{
+        font-size: 40px;
+        width: 700px;
+    }
+    .news-line{
+        flex-direction: column;
+    }
+    .news-line > img{
+        display: none;
+    }
+    .news-block{
+        padding: 50px 0 80px 0;
+        border-bottom: 2px solid #262626;
+    }
+    .news-blog2{
+        padding:  0 0 50px 0;
+    }
+    .news-block > p{
+        width: 100%;
+    }
+}
+@media (max-width:1035px){
+    .title-text > span{
+        font-size: 16px;
+    }
+    .title-text > h2{
+        font-size: 30px;
+        width: 400px;
+    }
+    .news-title > button{
+        padding: 15px 20px;
+    }
+    .title-text > h2{
+        font-size: 25px;
+        width: 350px;
+    }
+    .title-text > span{
+        font-size: 14px;
+    }
+    .news-title > button {
+        padding: 15px;
+    }
+}
+@media (max-width:695px){
+    .news-title2 > p{
+        font-size: 14px;
+    }
+    .news-title2 > h2{
+        font-size: 18px;
+    }
+    .format-text > p{
+        font-size: 12px;
+    }
+    .format-text > h3{
+        font-size: 12px;
+        width: 100px;
+    }
+    .new-blog-format > button{
+        padding: 14px;
+        font-size: 14px;
+    }
+    .new-blog-card > h3{
+        font-size: 16px;
+    }
+    .new-blog-card > p{
+        font-size: 14px;    
+    }
+}
+@media (max-width:668px){
+    .news-title{
+        flex-direction: column;
+        align-items: start;
+    }
+    .news-title > button{
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    section{
+        padding: 80px 0;
+    }
+    .title-text > h2{
+        width: 100%;
+        font-size: 30px;
+    }
+}
+@media (max-width:615px){
+    .news-card{
+        flex-direction: column;
+    }
+    .new-blog-card{
+        width: 100%;
+    }
 }
 </style>
 
