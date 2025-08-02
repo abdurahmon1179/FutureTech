@@ -18,7 +18,9 @@
                     <li>
                         <router-link to="/second" class="link" active-class="active">News</router-link>
                     </li>
-                    <li>Podcast</li>
+                    <li>
+                        <router-link to="/third" class="link" active-class="active">News</router-link>
+                    </li>
                     <li>Resources</li>
                 </ul>
 

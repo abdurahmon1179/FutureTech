@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/homepage.vue'
 import SecondPage from "../components/second-page/index.vue"
+import ThirdPage from "../components/third-page/index.vue"
 
 
 const routes = [
   { path: '/', component: HomePage },
-  { path: '/second', component: SecondPage }
+  { path: '/second', component: SecondPage },
+  { path: '/third', component: ThirdPage }
 ]
 
 const router = createRouter({
