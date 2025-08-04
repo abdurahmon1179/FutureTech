@@ -8,22 +8,24 @@
     <div class="nav-bar">
         <Container class="nav">
             <div class="nav-bar-wrapper">
+                
                 <a href="/">
                     <img src="../../../public/img/logo.svg" alt="">
                 </a>
                 <ul>
                     <li>
-                        <router-link to="/" class="link" active-class="active">Bosh sahifa</router-link>
+                        <router-link to="/" class="link" active-class="active">Home</router-link>
                     </li>
                     <li>
                         <router-link to="/second" class="link" active-class="active">News</router-link>
                     </li>
                     <li>
-                        <router-link to="/third" class="link" active-class="active">News</router-link>
+                        <router-link to="/third" class="link" active-class="active">Podcasts</router-link>
                     </li>
-                    <li>Resources</li>
+                    <li>
+                        <router-link to="/fourth" class="link" active-class="active">Resources</router-link>
+                    </li>
                 </ul>
-
                 <button>Contact Us</button>
                 <img class="burger-menu" src="../../../public/img/burger.svg" alt="">
             </div>

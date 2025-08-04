@@ -10,6 +10,7 @@
                         <img src="../../../public/img/newslike.svg" alt="">
                         <img src="../../../public/img/newsshare.svg" alt="">
                     </div>
+                    
                     <button>
                         <p>Read More</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">

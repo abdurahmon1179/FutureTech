@@ -233,9 +233,6 @@ hr{
         flex-wrap: wrap;
         gap: 30px;
     }
-    .card-news{
-        /* background-color: green; */
-    }
     .card-news-active > button{
         padding: 18px 70px;
     }
