@@ -130,7 +130,7 @@ hr{
     .card > h3{
     font-size: 35px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
     display: flex; 
     align-items: center;
     }
@@ -147,6 +147,20 @@ hr{
     }
     .news-title > div > h1{
         font-size: 35px;
+    }
+    .card-wrapper{
+        display: none;
+    }
+}
+@media (max-width:615px){
+    .news-title > div > p{
+        font-size: 10px;
+    }
+    .news-title > h1{
+        font-size: 25px;
+    }
+    .news-title > div > h1{
+        font-size: 25px;
     }
 }
 </style>
