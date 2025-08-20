@@ -8,7 +8,7 @@
         </div>
         <img src="../../../public/img/row.svg" alt="">
         <div class="news-blog2">
-            <img src="../../../public/img/news2.svg" alt="">
+            <img src="../../../public/img/third.svg" alt="">
             <div class="new-card-title">
                 <div class="text">
                     <h2>Quantum Computing Whitepaper</h2>
@@ -48,7 +48,7 @@
         </div>
         <img src="../../../public/img/row.svg" alt="">
         <div class="news-blog2">
-            <img src="../../../public/img/news2.svg" alt="">
+            <img src="../../../public/img/third2.svg" alt="">
             <div class="new-card-title">
                 <div class="text">
                     <h2>Quantum Computing Whitepaper</h2>

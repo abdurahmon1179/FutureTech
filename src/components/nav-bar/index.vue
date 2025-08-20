@@ -26,7 +26,9 @@
                         <router-link to="/fourth" class="link" active-class="active">Resources</router-link>
                     </li>
                 </ul>
-                <button>Contact Us</button>
+                
+                    <router-link to="/login" class="login login-page" >Contact Us</router-link>
+                
                 <img class="burger-menu" src="../../../public/img/burger.svg" alt="">
             </div>
         </Container>
@@ -99,7 +101,7 @@
     color: white !important;
 }
 
-.nav-bar-wrapper>button {
+.login-page {
     padding: 14px 24px;
     background-color: #FFD11A;
     color: #141414;
@@ -111,7 +113,7 @@
     cursor: pointer;
 }
 
-.nav-bar-wrapper>button:hover {
+.login-page:hover {
     border: 1px solid #FFD11A;
     background-color: transparent;
     color: white;
@@ -122,6 +124,14 @@
 }
 .link{
     color: #98989A;
+}
+button:hover .login {
+  color: white !important;
+}
+
+.login{
+    color: black;
+    text-decoration: none;
 }
 @media(max-width:860px) {
     .nav-bar-wrapper>ul {
