@@ -138,7 +138,7 @@ button:hover .login {
         display: none;
     }
 
-    .nav-bar-wrapper>button {
+    .login-page {
         display: none;
     }
 
