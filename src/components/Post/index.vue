@@ -8,7 +8,7 @@
                 </div>
                 <div class="post-title-link">
                     <button>
-                        <p>View All Blogs</p>
+                        <router-link to="/third" class="link text-btn" active-class="active">View all blogs</router-link>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
@@ -193,7 +193,8 @@
     border-radius: 12px;
     cursor: pointer;
 }
-.post-title-link > button > p{
+.text-btn{
+    text-decoration: none;
     font-family: Inter;
     color: #98989A;
 }
