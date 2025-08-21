@@ -12,3 +12,6 @@ body{
   color: white;
   overflow-x: hidden;
 }
+button{
+  cursor: pointer;
+}

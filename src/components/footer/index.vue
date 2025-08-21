@@ -235,6 +235,13 @@ footer {
 .off{
     display: none;
 }
+li:hover{
+    color: white !important;
+    cursor: pointer;
+}
+.menu-wrapper-row > span:hover{
+    cursor: pointer;
+}
 @media (max-width:1400px) {
     .container {
         width: 100%;
