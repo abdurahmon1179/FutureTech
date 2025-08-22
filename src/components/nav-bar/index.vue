@@ -58,6 +58,10 @@
 .link {
   text-decoration: none;
   color: #98989A;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid transparent; 
+  transition: 0.3s;
 }
 
 .nav-bar-top {

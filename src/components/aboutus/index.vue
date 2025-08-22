@@ -118,6 +118,12 @@ section{
 .second{
     display: none;
 }
+
+.aboutus-card-title img:hover { 
+  cursor: pointer;
+  /* filter: invert(71%) sepia(90%) saturate(2479%) hue-rotate(2deg) brightness(106%) contrast(104%); */
+  opacity: 0.5;
+}
 @media (max-width:1400px){
     .container{
         width: 100%;

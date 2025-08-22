@@ -182,6 +182,10 @@ footer {
     color: #98989A;
 }
 
+.menu-wrapper-row> span:hover{
+    opacity: 0.5;
+}
+
 .footer-menu-wrapper {
     display: flex;
     justify-content: space-between;
