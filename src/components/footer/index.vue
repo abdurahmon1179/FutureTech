@@ -5,94 +5,95 @@
                 <div class="footer-row">
                     <div class="footer-menu">
                         <ul>
-                            <h3>Home</h3>
-                            <li>Features</li>
-                            <li>Blogs</li>
+                            <h3>{{ $t('footer.menu1.title') }}</h3>
+                            <li>{{ $t('footer.menu1.features') }}</li>
+                            <li>{{ $t('footer.menu1.blogs') }}</li>
                             <div>
-                                <li>Resources</li>
-                                <span>New</span>
+                                <li>{{ $t('footer.menu1.resources') }}</li>
+                                <span>{{ $t('footer.menu1.new') }}</span>
                             </div>
-                            <li>Testimonials</li>
-                            <li>Contact Us</li>
-                            <li>Newsletter</li>
+                            <li>{{ $t('footer.menu1.testimonials') }}</li>
+                            <li>{{ $t('footer.menu1.contactUs') }}</li>
+                            <li>{{ $t('footer.menu1.newsletter') }}</li>
                         </ul>
                     </div>
 
                     <div class="footer-menu">
                         <ul>
-                            <h3>News</h3>
-                            <li>Trending Stories</li>
-                            <li>Featured Videos</li>
-                            <li>Technology</li>
-                            <li>Health</li>
-                            <li>Politics</li>
-                            <li>Environment</li>
+                            <h3>{{ $t('footer.menu2.title') }}</h3>
+                            <li>{{ $t('footer.menu2.trendingStories') }}</li>
+                            <li>{{ $t('footer.menu2.featuredVideos') }}</li>
+                            <li>{{ $t('footer.menu2.technology') }}</li>
+                            <li>{{ $t('footer.menu2.health') }}</li>
+                            <li>{{ $t('footer.menu2.politics') }}</li>
+                            <li>{{ $t('footer.menu2.environment') }}</li>
                         </ul>
                     </div>
 
                     <div class="footer-menu">
                         <ul>
-                            <h3>Blogs</h3>
-                            <li>Quantum Computing</li>
-                            <li>AI Ethics</li>
-                            <li>Space Exploration</li>
+                            <h3>{{ $t('footer.menu3.title') }}</h3>
+                            <li>{{ $t('footer.menu3.quantumComputing') }}</li>
+                            <li>{{ $t('footer.menu3.aiEthics') }}</li>
+                            <li>{{ $t('footer.menu3.spaceExploration') }}</li>
                             <div>
-                                <li>Biotechnology</li>
-                                <span>News</span>
+                                <li>{{ $t('footer.menu3.biotechnology') }}</li>
+                                <span>{{ $t('footer.menu3.new') }}</span>
                             </div>
-                            <li>Renewable Energy</li>
-                            <li>Biohacking</li>
+                            <li>{{ $t('footer.menu3.renewableEnergy') }}</li>
+                            <li>{{ $t('footer.menu3.biohacking') }}</li>
                         </ul>
                     </div>
 
                     <div class="footer-menu">
                         <ul>
-                            <h3>Podcasts</h3>
-                            <li>AI Revolution</li>
+                            <h3>{{ $t('footer.menu4.title') }}</h3>
+                            <li>{{ $t('footer.menu4.aiRevolution') }}</li>
                             <div>
-                                <li>AI Revolution</li>
-                                <span>News</span>
+                                <li>{{ $t('footer.menu4.aiRevolution') }}</li>
+                                <span>{{ $t('footer.menu4.new') }}</span>
                             </div>
-                            <li>TechTalk AI</li>
-                            <li>AI Conversations</li>
+                            <li>{{ $t('footer.menu4.techTalkAI') }}</li>
+                            <li>{{ $t('footer.menu4.aiConversations') }}</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="footer-menu-link second-row">
-                    <h3>Resources</h3>
+                    <h3>{{ $t('footer.secondRow.title') }}</h3>
                     <div class="menu-wrapper-row">
                         <span>
-                            Whitepapers
+                            {{ $t('footer.secondRow.whitepapers') }}
                             <img src="../../../public/img/footerarrow.svg" alt="">
                         </span>
                         <span>
-                            Ebooks
+                            {{ $t('footer.secondRow.ebooks') }}
                             <img src="../../../public/img/footerarrow.svg" alt="">
                         </span>
                         <span>
-                            Reports
+                            {{ $t('footer.secondRow.reports') }}
                             <img src="../../../public/img/footerarrow.svg" alt="">
                         </span>
                         <span>
-                            Research Papers
+                            {{ $t('footer.secondRow.researchPapers') }}
                             <img src="../../../public/img/footerarrow.svg" alt="">
                         </span>
                     </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <div class="footer-bottom-text">
-                    <p>Terms & Conditions</p>
+                    <p>{{ $t('footer.bottom.termsConditions') }}</p>
                     <img src="../../../public/img/footerrow.svg" alt="">
-                    <p>Privacy Policy</p>
+                    <p>{{ $t('footer.bottom.privacyPolicy') }}</p>
                 </div>
                 <div class="footer-bottom-apps">
                     <img src="../../../public/img/twitter.svg" alt="">
                     <img src="../../../public/img/meida.svg" alt="">
                     <img src="../../../public/img/linkedin.svg" alt="">
                 </div>
-                <p>© 2024 FutureTech. All rights reserved.</p>
+                <p>{{ $t('footer.bottom.copyright') }}</p>
             </div>
 
             <div class="off">
@@ -103,16 +104,17 @@
                 </div>
 
                 <div class="footer-bottom-text">
-                    <p>Terms & Conditions</p>
+                    <p>{{ $t('footer.bottom.termsConditions') }}</p>
                     <img src="../../../public/img/footerrow.svg" alt="">
-                    <p>Privacy Policy</p>
+                    <p>{{ $t('footer.bottom.privacyPolicy') }}</p>
                 </div>
                 
-                <p>© 2024 FutureTech. All rights reserved.</p>
+                <p>{{ $t('footer.bottom.copyright') }}</p>
             </div>
         </footer>
     </Container>
 </template>
+
 
 <style scoped>
 footer {

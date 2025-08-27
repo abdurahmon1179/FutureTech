@@ -1,56 +1,55 @@
 <template>
-    <Container class="container">
-        <div class="news-wrapper">
-            <div class="card-news">
-                <img src="../../../public/img/new.svg" alt="">
-                <p>A Decisive Victory for Progressive Policies</p>
-                <span>Politics</span>
-                <div class="card-news-active">
-                    <div>
-                        <img src="../../../public/img/newslike.svg" alt="">
-                        <img src="../../../public/img/newsshare.svg" alt="">
-                    </div>
-                    
-                    <button>
-                        <p>Read More</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
-
-            <div class="card-news">
-                <img src="../../../public/img/new2.svg" alt="">
-                <p>A Decisive Victory for Progressive Policies</p>
-                <span>Politics</span>
-                <div class="card-news-active">
-                    <div>
-                        <img src="../../../public/img/newslike.svg" alt="">
-                        <img src="../../../public/img/newsshare.svg" alt="">
-                    </div>
-                    <button>
-                        <p>Read More</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
-
-            <div class="card-news">
-                <img src="../../../public/img/new3.svg" alt="">
-                <p>A Decisive Victory for Progressive Policies</p>
-                <span>Politics</span>
-                <div class="card-news-active">
-                    <div>
-                        <img src="../../../public/img/newslike.svg" alt="">
-                        <img src="../../../public/img/newsshare.svg" alt="">
-                    </div>
-                    <button>
-                        <p>Read More</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
+  <Container class="container">
+    <div class="news-wrapper">
+      <div class="card-news">
+        <img src="../../../public/img/new.svg" alt="">
+        <p>{{ $t("news.card1.title") }}</p>
+        <span>{{ $t("news.card1.category") }}</span>
+        <div class="card-news-active">
+          <div>
+            <img src="../../../public/img/newslike.svg" alt="">
+            <img src="../../../public/img/newsshare.svg" alt="">
+          </div>
+          <button>
+            <p>{{ $t("news.card1.button") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
         </div>
-    </Container>
+      </div>
+
+      <div class="card-news">
+        <img src="../../../public/img/new2.svg" alt="">
+        <p>{{ $t("news.card2.title") }}</p>
+        <span>{{ $t("news.card2.category") }}</span>
+        <div class="card-news-active">
+          <div>
+            <img src="../../../public/img/newslike.svg" alt="">
+            <img src="../../../public/img/newsshare.svg" alt="">
+          </div>
+          <button>
+            <p>{{ $t("news.card2.button") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="card-news">
+        <img src="../../../public/img/new3.svg" alt="">
+        <p>{{ $t("news.card3.title") }}</p>
+        <span>{{ $t("news.card3.category") }}</span>
+        <div class="card-news-active">
+          <div>
+            <img src="../../../public/img/newslike.svg" alt="">
+            <img src="../../../public/img/newsshare.svg" alt="">
+          </div>
+          <button>
+            <p>{{ $t("news.card3.button") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </Container>
 </template>
 
 <style scoped>
@@ -86,7 +85,7 @@
     gap: 10px;
 }
 .card-news-active > button{
-    padding: 18px 60px;
+    padding: 10px 60px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -95,6 +94,9 @@
     border-radius: 12px;
     color: #98989A;
     cursor: pointer;
+}
+.card-news-active > button > p{
+    margin-top: 10px;
 }
 .card-news > img{
     width: 450px;

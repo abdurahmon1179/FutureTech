@@ -3,14 +3,10 @@
         <div>
             <Container class="custom">
                 <div class="hero-title">
-                    <h3>Your Journey to Tomorrow Begins Here</h3>
-                    <h1>Explore the Frontiers of Artificial Intelligence</h1>
+                    <h3>{{ $t('hero.subtitle') }}</h3>
+                    <h1>{{ $t('hero.title') }}</h1>
                     <p>
-                        Welcome to the epicenter of AI innovation. FutureTech AI News is your passport to a world where
-                        machines think, learn, and reshape the future. Join us on this visionary expedition into the
-                        heart
-                        of
-                        AI.
+                        {{ $t('hero.description') }}
                     </p>
                 </div>
             </Container>
@@ -18,17 +14,17 @@
             <div class="card-wrapper">
                 <div class="card card1">
                     <h3>300 <span>+</span></h3>
-                    <p>Resources available</p>
+                    <p>{{ $t('hero.resources') }}</p>
                 </div>
                 <img src="../../../public/img/row.svg" alt="">
                 <div class="card card2">
                     <h3>300 <span>+</span></h3>
-                    <p>Resources available</p>
+                    <p>{{ $t('hero.resources') }}</p>
                 </div>
                 <img src="../../../public/img/row.svg" alt="">
                 <div class="card card3">
                     <h3>300 <span>+</span></h3>
-                    <p>Resources available</p>
+                    <p>{{ $t('hero.resources') }}</p>
                 </div>
             </div>
         </div>
@@ -36,9 +32,9 @@
             <img src="../../../public/img/back.svg" alt="">
             <div class="resource-wrap">
                 <img src="../../../public/img/persons.svg" alt="">
-                <h3>Explore 1000+ resources</h3>
-                <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
-                <button><p>Explore Resources</p> <img src="../../../public/img/topstrelka.svg" alt=""></button>
+                <h3>{{ $t('hero.exploreTitle') }}</h3>
+                <p>{{ $t('hero.exploreText') }}</p>
+                <button><p>{{ $t('hero.exploreBtn') }}</p> <img src="../../../public/img/topstrelka.svg" alt=""></button>
             </div>
         </div>
     </div>
@@ -48,12 +44,12 @@
             <img src="../../../public/img/news1.svg" alt="">
             <div class="card-news-text">
                 <div>
-                    <h3>Latest News Updates</h3>
-                    <p>Stay Current</p>
+                    <h3>{{ $t('hero.latest') }}</h3>
+                    <p>{{ $t('hero.stayCurrent') }}</p>
                 </div>
                 <img src="../../../public/img/news.svg" alt="">
             </div>
-            <p>Over 1,000 articles published monthly</p>
+            <p>{{ $t('hero.monthly') }}</p>
         </div>
         <img src="../../../public/img/newsrow.svg" alt="">
         <span class="line"></span>
@@ -61,12 +57,12 @@
             <img src="../../../public/img/news1.svg" alt="">
             <div class="card-news-text">
                 <div>
-                    <h3>Latest News Updates</h3>
-                    <p>Stay Current</p>
+                    <h3>{{ $t('hero.latest') }}</h3>
+                    <p>{{ $t('hero.stayCurrent') }}</p>
                 </div>
                 <img src="../../../public/img/news.svg" alt="">
             </div>
-            <p>Over 1,000 articles published monthly</p>
+            <p>{{ $t('hero.monthly') }}</p>
         </div>
         <img src="../../../public/img/newsrow.svg" alt="">
         <span class="line"></span>
@@ -74,15 +70,16 @@
             <img src="../../../public/img/news1.svg" alt="">
             <div class="card-news-text">
                 <div>
-                    <h3>Latest News Updates</h3>
-                    <p>Stay Current</p>
+                    <h3>{{ $t('hero.latest') }}</h3>
+                    <p>{{ $t('hero.stayCurrent') }}</p>
                 </div>
                 <img src="../../../public/img/news.svg" alt="">
             </div>
-            <p>Over 1,000 articles published monthly</p>
+            <p>{{ $t('hero.monthly') }}</p>
         </div>
     </Container>
 </template>
+
 
 <script setup>
 import Container from "../layout/index.vue"
@@ -211,7 +208,7 @@ import Container from "../layout/index.vue"
     width: 440px;
 }
 .resource-wrap > button{
-    padding: 18px 24px;
+    padding: 15px 24px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -219,6 +216,9 @@ import Container from "../layout/index.vue"
     border: 1px solid #262626;
     border-radius: 12px;
     color: white;
+}
+.resource-wrap > button > p{
+    margin-top: 10px;
 }
 .card-news-text{
     display: flex;

@@ -1,99 +1,106 @@
 <template>
-    <Container class="container">
-        <div class="news-title">
-            <h1>Today's Headlines: Stay</h1>
-            <div>
-                <h1>Informed</h1>
-                <p>Explore the latest news from around the world. We bring you up-to-the-minute updates on the most significant events, trends, and stories. Discover the world through our news coverage.</p>
-            </div>
+  <Container class="container">
+    <div class="news-title">
+      <h1>{{ t('news.newsTitle1') }}</h1>
+      <div>
+        <h1>{{ t('news.newsTitle2') }}</h1>
+        <p>{{ t('news.newsDescription') }}</p>
+      </div>
+    </div>
+  </Container>
+
+  <hr />
+
+  <Container class="container">
+    <div class="news-card-wrapper">
+      <img src="../../../public/img/newspage1.svg" alt="" />
+      <div class="card-content">
+        <h2>{{ t('news.mainNewsTitle') }}</h2>
+        <p>{{ t('news.mainNewsDescription') }}</p>
+
+        <div class="news-info">
+          <div class="info">
+            <p>{{ t('news.category') }}</p>
+            <h4>{{ t('news.environment') }}</h4>
+          </div>
+
+          <div class="info">
+            <p>{{ t('news.publicationDate') }}</p>
+            <h4>{{ t('news.publicationDateValue') }}</h4>
+          </div>
+
+          <div class="info">
+            <p>{{ t('news.author') }}</p>
+            <h4>{{ t('news.authorName') }}</h4>
+          </div>
         </div>
-    </Container>
-    <hr>
-    <Container class="container">
-        <div class="news-card-wrapper">
-            <img  src="../../../public/img/newspage1.svg" alt="">
-            <div class="card-content">
-                <h2>Global Climate Summit Addresses Urgent Climate Action</h2>
-                <p>World leaders gathered at the Global Climate Summit to discuss urgent climate action, emissions reductions, and renewable energy targets.</p>
-                <div class="news-info">
-                    <div class="info">
-                        <p>Category</p>
-                        <h4>Environment</h4>
-                    </div>
 
-                    <div class="info">
-                        <p>Publication Date</p>
-                        <h4>October 10, 2023</h4>
-                    </div>
-
-                    <div class="info">
-                        <p>Author</p>
-                        <h4>Jane Smith</h4>
-                    </div>
-                </div>
-                <div class="news-active">
-                    <div>
-                        <img src="../../../public/img/newslike.svg" alt="">
-                        <img src="../../../public/img/newsshare.svg" alt="">
-                    </div>
-                    <button>Read More</button>
-                </div>
-            </div>
+        <div class="news-active">
+          <div>
+            <img src="../../../public/img/newslike.svg" alt="" />
+            <img src="../../../public/img/newsshare.svg" alt="" />
+          </div>
+          <button>{{ t('news.readMore') }}</button>
         </div>
-    </Container>
-    <hr>
-    <Container class="container">
-        <div class="news-wrapper">
-            <div class="card-news">
-                <img src="../../../public/img/new.svg" alt="">
-                <p>A Decisive Victory for Progressive Policies</p>
-                <span>Politics</span>
-                <div class="card-news-active">
-                    <div>
-                        <img src="../../../public/img/newslike.svg" alt="">
-                        <img src="../../../public/img/newsshare.svg" alt="">
-                    </div>
-                    <button>
-                        <p>Read More</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
+      </div>
+    </div>
+  </Container>
 
-            <div class="card-news">
-                <img src="../../../public/img/new2.svg" alt="">
-                <p>A Decisive Victory for Progressive Policies</p>
-                <span>Politics</span>
-                <div class="card-news-active">
-                    <div>
-                        <img src="../../../public/img/newslike.svg" alt="">
-                        <img src="../../../public/img/newsshare.svg" alt="">
-                    </div>
-                    <button>
-                        <p>Read More</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
+  <hr />
 
-            <div class="card-news">
-                <img src="../../../public/img/new3.svg" alt="">
-                <p>A Decisive Victory for Progressive Policies</p>
-                <span>Politics</span>
-                <div class="card-news-active">
-                    <div>
-                        <img src="../../../public/img/newslike.svg" alt="">
-                        <img src="../../../public/img/newsshare.svg" alt="">
-                    </div>
-                    <button>
-                        <p>Read More</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
+  <Container class="container">
+    <div class="news-wrapper">
+      <div class="card-news">
+        <img src="../../../public/img/new.svg" alt="" />
+        <p>{{ t('news.cardNewsTitle1') }}</p>
+        <span>{{ t('news.politics') }}</span>
+        <div class="card-news-active">
+          <div>
+            <img src="../../../public/img/newslike.svg" alt="" />
+            <img src="../../../public/img/newsshare.svg" alt="" />
+          </div>
+          <button>
+            <p>{{ t('news.readMore') }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="" />
+          </button>
         </div>
-    </Container>
+      </div>
+
+      <div class="card-news">
+        <img src="../../../public/img/new2.svg" alt="" />
+        <p>{{ t('news.cardNewsTitle2') }}</p>
+        <span>{{ t('news.politics') }}</span>
+        <div class="card-news-active">
+          <div>
+            <img src="../../../public/img/newslike.svg" alt="" />
+            <img src="../../../public/img/newsshare.svg" alt="" />
+          </div>
+          <button>
+            <p>{{ t('news.readMore') }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="card-news">
+        <img src="../../../public/img/new3.svg" alt="" />
+        <p>{{ t('news.cardNewsTitle3') }}</p>
+        <span>{{ t('news.politics') }}</span>
+        <div class="card-news-active">
+          <div>
+            <img src="../../../public/img/newslike.svg" alt="" />
+            <img src="../../../public/img/newsshare.svg" alt="" />
+          </div>
+          <button>
+            <p>{{ t('news.readMore') }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </Container>
 </template>
+
 
 <style scoped>
 .news-title{
@@ -209,7 +216,7 @@ hr{
     gap: 10px;
 }
 .card-news-active > button{
-    padding: 18px 60px;
+    padding: 10px 50px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -218,6 +225,9 @@ hr{
     border-radius: 12px;
     color: #98989A;
     cursor: pointer;
+}
+.card-news-active > button > p{
+    margin-top: 10px;
 }
 .card-news > img{
     width: 450px;
@@ -361,4 +371,10 @@ hr{
 
 <script setup>
 import Container from "../layout/index.vue"
+
+
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n(); 
+
 </script>

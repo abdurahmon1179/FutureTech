@@ -3,18 +3,19 @@
     <Container class="section-container">
         <div class="news-title">
             <div class="title-text">
-                <span >
-                    What Our Readers Say
+                <span>
+                    {{ $t('testimonials.subtitle') }}
                 </span>
-                <h2>Real Words from Real Readers</h2>
+                <h2>{{ $t('testimonials.title') }}</h2>
             </div>
             <button>
-                <p>View All Resources</p>
+                <p>{{ $t('buttons.viewAllResources') }}</p>
                 <img src="../../../public/img/topstrelka.svg" alt="">
             </button>
         </div>
     </Container>
 </section>
+
 <Container class="section-container">
     <div class="users-wrapper">
         <div class="user">
@@ -23,50 +24,54 @@
                     <img src="../../../public/img/user.svg" alt="">
                 </div>
                 <div class="user-name">
-                    <h2>Sarah Thompson</h2>
-                    <p>San Francisco, USA</p>
+                    <h2>{{ $t('users.sarah.name') }}</h2>
+                    <p>{{ $t('users.sarah.location') }}</p>
                 </div>
             </div>
             <div class="user-comment">
                 <img src="../../../public/img/fivestar.svg" alt="">
-                <p>The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.</p>
+                <p>{{ $t('users.sarah.comment') }}</p>
             </div>
         </div>
         <img src="../../../public/img/row2.svg" alt="">
+        
         <div class="user">
             <div class="user-info">
                 <div class="user-img">
                     <img src="../../../public/img/user.svg" alt="">
                 </div>
                 <div class="user-name">
-                    <h2>Sarah Thompson</h2>
-                    <p>San Francisco, USA</p>
+                    <h2>{{ $t('users.john.name') }}</h2>
+                    <p>{{ $t('users.john.location') }}</p>
                 </div>
             </div>
             <div class="user-comment">
                 <img src="../../../public/img/fivestar.svg" alt="">
-                <p>The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.</p>
+                <p>{{ $t('users.john.comment') }}</p>
             </div>
         </div>
         <img src="../../../public/img/row2.svg" alt="">
+        
         <div class="user">
             <div class="user-info">
                 <div class="user-img">
                     <img src="../../../public/img/user.svg" alt="">
                 </div>
                 <div class="user-name">
-                    <h2>Sarah Thompson</h2>
-                    <p>San Francisco, USA</p>
+                    <h2>{{ $t('users.anna.name') }}</h2>
+                    <p>{{ $t('users.anna.location') }}</p>
                 </div>
             </div>
             <div class="user-comment">
                 <img src="../../../public/img/fivestar.svg" alt="">
-                <p>The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.</p>
+                <p>{{ $t('users.anna.comment') }}</p>
             </div>
         </div>
     </div>
 </Container>
+
 <hr>
+
 <Container class="section-container">
     <div class="users-wrapper">
         <div class="user">
@@ -75,46 +80,47 @@
                     <img src="../../../public/img/user.svg" alt="">
                 </div>
                 <div class="user-name">
-                    <h2>Sarah Thompson</h2>
-                    <p>San Francisco, USA</p>
+                    <h2>{{ $t('users.mike.name') }}</h2>
+                    <p>{{ $t('users.mike.location') }}</p>
                 </div>
             </div>
             <div class="user-comment">
                 <img src="../../../public/img/fivestar.svg" alt="">
-                <p>The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.</p>
+                <p>{{ $t('users.mike.comment') }}</p>
             </div>
         </div>
         <img src="../../../public/img/row2.svg" alt="">
+        
         <div class="user">
             <div class="user-info">
                 <div class="user-img">
                     <img src="../../../public/img/user.svg" alt="">
                 </div>
                 <div class="user-name">
-                    <h2>Sarah Thompson</h2>
-                    <p>San Francisco, USA</p>
+                    <h2>{{ $t('users.alex.name') }}</h2>
+                    <p>{{ $t('users.alex.location') }}</p>
                 </div>
             </div>
             <div class="user-comment">
                 <img src="../../../public/img/fivestar.svg" alt="">
-                <p>The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.</p>
+                <p>{{ $t('users.alex.comment') }}</p>
             </div>
         </div>
         <img src="../../../public/img/row2.svg" alt="">
-
+        
         <div class="user">
             <div class="user-info">
                 <div class="user-img">
                     <img src="../../../public/img/user.svg" alt="">
                 </div>
                 <div class="user-name">
-                    <h2>Sarah Thompson</h2>
-                    <p>San Francisco, USA</p>
+                    <h2>{{ $t('users.lisa.name') }}</h2>
+                    <p>{{ $t('users.lisa.location') }}</p>
                 </div>
             </div>
             <div class="user-comment">
                 <img src="../../../public/img/fivestar.svg" alt="">
-                <p>The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.</p>
+                <p>{{ $t('users.lisa.comment') }}</p>
             </div>
         </div>
     </div>
@@ -151,12 +157,15 @@ section{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 18px 24px;
+    padding: 10px 24px;
     background-color: #141414;
     border: 1px solid #262626;
     border-radius: 12px;
     color: #98989A;
     font-size: 18px;
+}
+.news-title > button > p{
+    margin-top: 12px;
 }
 .users-wrapper{
     display: flex;

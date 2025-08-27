@@ -1,81 +1,68 @@
 <template>
-    <section>
-        <h1>The Rise of Artificial Intelligence in Healthcare</h1>
-    </section>
-    <div class="wrapper">
-        <div class="title-text">
-            <h3>Introduction</h3>
-            <p>Artificial Intelligence (AI) has emerged as a transformative force in the healthcare industry, reshaping patient care, diagnostics, and research. In this blog post, we explore the profound impact of AI in healthcare, from revolutionizing diagnostic accuracy to enhancing patient outcomes.</p>
-        </div>
-        <img src="../../../public/img/row.svg" alt="">
-            <div class="wrap">
-                <div class="image-group">
-                <img src="../../../public/img/like.svg" alt="">
-                <img src="../../../public/img/viewer.svg" alt="">
-                <img src="../../../public/img/share.svg" alt="">
-            </div>
-                <span></span>
-        </div>   
+  <section>
+    <h1>{{ $t("thirdPage.title") }}</h1>
+  </section>
+  <div class="wrapper">
+    <div class="title-text">
+      <h3>{{ $t("thirdPage.introductionTitle") }}</h3>
+      <p>{{ $t("thirdPage.introductionText") }}</p>
     </div>
-    <hr>
-    <Container>
-        <div>
-            <div class="text-wrapper">
-                <div class="left-side">
-                    <h3>Artificial Intelligence (AI)</h3>
-                    <p>Artificial Intelligence (AI) has permeated virtually every aspect of our lives, and healthcare is no exception. The integration of AI in healthcare is ushering in a new era of medical practice, where machines complement the capabilities of healthcare professionals, ultimately improving patient outcomes and the efficiency of the healthcare system. In this blog post, we will delve into the diverse applications of AI in healthcare, from diagnostic imaging to personalized treatment plans, and address the ethical considerations surrounding this revolutionary technology.
-                    <br><br>
-                    Artificial Intelligence (AI) has permeated virtually every aspect of our lives, and healthcare is no exception. The integration of AI in healthcare is ushering in a new era of medical practice, where machines complement the capabilities of healthcare professionals, ultimately improving patient outcomes and the efficiency of the healthcare system. In this blog post, we will delve into the diverse applications of AI in healthcare, from diagnostic imaging to personalized treatment plans, and address the ethical considerations surrounding this revolutionary technology.
-                    </p>
-                    <h3>Predictive Analytics and Disease Prevention</h3>
-                    <p class="blur">Artificial Intelligence (AI) has permeated virtually every aspect of our lives, and healthcare is no exception. The integration of AI in healthcare is ushering in a new era of medical practice, where machines complement the capabilities of healthcare professionals, ultimately improving patient outcomes and the efficiency of the healthcare system. In this blog post, we will delve into the diverse applications of AI in healthcare, from diagnostic imaging to personalized treatment plans. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis expedita nesciunt nihil magni ab. Magnam, harum rerum soluta et assumenda facere rem blanditiis fugit doloribus alias vero nostrum quo incidunt.
-                    </p>
-                    <button>
-                        <p>Read Full Blog</p>
-                        <img src="../../../public/img/bottomarrow.svg" alt="">
-                    </button>
-                </div>
-                <div class="column"></div>
-                <hr class="circle">
-                <div class="right-side">
-                    <div class="small-text-wrap">
-                        <div class="small-text">
-                            <h3>Publication Date</h3>
-                            <p>October 15, 2023</p>
-                        </div>
-                        <div class="small-text">
-                            <h3>Publication Date</h3>
-                            <p>October 15, 2023</p>
-                        </div>
-                        <div class="small-text">
-                            <h3>Publication Date</h3>
-                            <p>October 15, 2023</p>
-                        </div>
-                        <div class="small-text">
-                            <h3>Publication Date</h3>
-                            <p>October 15, 2023</p>
-                        </div>
-                    </div>
-                    <div class="right-side-menu">
-                        <h3>Table of Contents</h3>
-                        <ul class="menu-wrapper">
-                            <li>Introduction</li>
-                            <li>AI in Diagnostic Imaging</li>
-                            <li>Predictive Analytics and Disease Prevention</li>
-                            <li>Personalized Treatment Plans</li>
-                            <li>Drug Discovery and Research</li>
-                            <li>AI in Telemedicine</li>
-                            <li>Ethical Considerations</li>
-                            <li>The Future of AI in Healthcare</li>
-                            <li>Conclusion</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <img src="../../../public/img/row.svg" alt="">
+    <div class="wrap">
+      <div class="image-group">
+        <img src="../../../public/img/like.svg" alt="">
+        <img src="../../../public/img/viewer.svg" alt="">
+        <img src="../../../public/img/share.svg" alt="">
+      </div>
+      <span></span>
+    </div>
+  </div>
+  <hr>
+  <Container>
+    <div>
+      <div class="text-wrapper">
+        <div class="left-side">
+          <h3>{{ $t("thirdPage.aiSectionTitle") }}</h3>
+          <p>{{ $t("thirdPage.aiSectionText") }}</p>
+          <h3>{{ $t("thirdPage.predictiveTitle") }}</h3>
+          <p class="blur">{{ $t("thirdPage.predictiveText") }}</p>
+          <button>
+            <p>{{ $t("thirdPage.readFullBlog") }}</p>
+            <img src="../../../public/img/bottomarrow.svg" alt="">
+          </button>
         </div>
-    </Container>
-    <hr class="bottom">
+
+        <div class="column"></div>
+        <hr class="circle">
+
+        <div class="right-side">
+          <div class="small-text-wrap">
+            <div class="small-text" v-for="n in 4" :key="n">
+              <h3>{{ $t("thirdPage.publicationDate") }}</h3>
+              <p>{{ $t("thirdPage.publicationDateValue") }}</p>
+            </div>
+          </div>
+          <div class="right-side-menu">
+            <h3>{{ $t("thirdPage.tableOfContentsTitle") }}</h3>
+            <ul class="menu-wrapper">
+              <li>{{ $t("thirdPage.tableOfContents.0") }}</li>
+              <li>{{ $t("thirdPage.tableOfContents.1") }}</li>
+              <li>{{ $t("thirdPage.tableOfContents.2") }}</li>
+              <li>{{ $t("thirdPage.tableOfContents.3") }}</li>
+              <li>{{ $t("thirdPage.tableOfContents.4") }}</li>
+              <li>{{ $t("thirdPage.tableOfContents.5") }}</li>
+              <li>{{ $t("thirdPage.tableOfContents.6") }}</li>
+              <li>{{ $t("thirdPage.tableOfContents.7") }}</li>
+              <li>{{ $t("thirdPage.tableOfContents.8") }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+  <hr class="bottom">
 </template>
+
 
 <style scoped>
 section{
@@ -168,7 +155,7 @@ hr{
     position: absolute;
     display: flex;
     align-items: center;
-    padding: 14px 20px;
+    padding: 10px 20px;
     gap: 4px;
     font-size: 14px;
     background-color: #141414;
@@ -178,6 +165,9 @@ hr{
     bottom: 65px;
     left: 35%;
     cursor: pointer;
+}
+.left-side > button > p{
+    margin-top: 10px;
 }
 .text-wrapper{
     display: flex;

@@ -3,36 +3,36 @@
     <div class="news-line">
         <div class="news-block">
             <img src="../../../public/img/newslogo.svg" alt="">
-            <h2>Quantum Computing Whitepaper</h2>
-            <p>Provides technical specifications and requirements for implementing quantum computing systems.</p>
+            <h2>{{ $t("whitepaper.card1.title") }}</h2>
+            <p>{{ $t("whitepaper.card1.shortDesc") }}</p>
         </div>
         <img src="../../../public/img/row.svg" alt="">
         <div class="news-blog2">
             <img src="../../../public/img/third.svg" alt="">
             <div class="new-card-title">
                 <div class="text">
-                    <h2>Quantum Computing Whitepaper</h2>
-                     <p>An in-depth whitepaper exploring the principles, applications, and potential impact of quantum computing.</p>
+                    <h2>{{ $t("whitepaper.card1.title") }}</h2>
+                    <p>{{ $t("whitepaper.card1.longDesc") }}</p>
                 </div>
                 <div class="title-btn">
                     <button>
-                        <p>Download PDF Now</p>
+                        <p>{{ $t("whitepaper.downloadBtn") }}</p>
                         <img src="../../../public/img/btnarrow.svg" alt="">
                     </button>
                 </div>
             </div>
             <div class="news-card">
                 <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
+                    <p>{{ $t("whitepaper.totalEbooks") }}</p>
+                    <h3>{{ $t("whitepaper.ebooksCount") }}</h3>
                 </div>
                 <div class="new-blog-format format-text">
-                    <p>Category</p>
-                    <h3>Quantum Computing</h3>
+                    <p>{{ $t("whitepaper.category") }}</p>
+                    <h3>{{ $t("whitepaper.card1.categoryName") }}</h3>
                 </div>
                 <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
+                    <p>{{ $t("whitepaper.totalEbooks") }}</p>
+                    <h3>{{ $t("whitepaper.ebooksCount") }}</h3>
                 </div>
             </div>    
         </div>
@@ -43,42 +43,43 @@
     <div class="news-line">
         <div class="news-block">
             <img src="../../../public/img/newslogo2.svg" alt="">
-            <h2>Space Exploration Whitepaper</h2>
-            <p>Explores Mars colonization, asteroid resource potential, and space tourism.</p>
+            <h2>{{ $t("whitepaper.card2.title") }}</h2>
+            <p>{{ $t("whitepaper.card2.shortDesc") }}</p>
         </div>
         <img src="../../../public/img/row.svg" alt="">
         <div class="news-blog2">
             <img src="../../../public/img/third2.svg" alt="">
             <div class="new-card-title">
                 <div class="text">
-                    <h2>Quantum Computing Whitepaper</h2>
-                     <p>An in-depth whitepaper exploring the principles, applications, and potential impact of quantum computing.</p>
+                    <h2>{{ $t("whitepaper.card2.title") }}</h2>
+                    <p>{{ $t("whitepaper.card2.longDesc") }}</p>
                 </div>
                 <div class="title-btn">
                     <button>
-                        <p>Download PDF Now</p>
+                        <p>{{ $t("whitepaper.downloadBtn") }}</p>
                         <img src="../../../public/img/btnarrow.svg" alt="">
                     </button>
                 </div>
             </div>
             <div class="news-card">
                 <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
+                    <p>{{ $t("whitepaper.totalEbooks") }}</p>
+                    <h3>{{ $t("whitepaper.ebooksCount") }}</h3>
                 </div>
                 <div class="new-blog-format format-text">
-                    <p>Category</p>
-                    <h3>Quantum Computing</h3>
+                    <p>{{ $t("whitepaper.category") }}</p>
+                    <h3>{{ $t("whitepaper.card2.categoryName") }}</h3>
                 </div>
                 <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
+                    <p>{{ $t("whitepaper.totalEbooks") }}</p>
+                    <h3>{{ $t("whitepaper.ebooksCount") }}</h3>
                 </div>
             </div>    
         </div>
     </div>
 </Container>
 </template>
+
 
 <style scoped>
 .news-block{
@@ -273,7 +274,7 @@ hr{
     font-family: Inter;
 }
 .title-btn > button{
-    padding: 10px;
+    padding: 0px 10px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -283,6 +284,9 @@ hr{
     border: 1px solid #262626;
     background-color: #1A1A1A;
     cursor: pointer;
+}
+.title-btn > button > p{
+    margin-top: 10px;
 }
 @media (max-width:1400px){
     .title-container{

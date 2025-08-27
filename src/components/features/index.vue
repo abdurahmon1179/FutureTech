@@ -2,35 +2,23 @@
     <section class="feature-section">
         <Container>
             <div class="title">
-                <p>Unlock the Power of</p>
+                <p>{{ $t('feature.subtitle') }}</p>
             </div>
-            <h2 class="title-h2">FutureTech Features</h2>
+            <h2 class="title-h2">{{ $t('feature.title') }}</h2>
         </Container>
     </section>
     <Container class="body-container">
         <div class="future-tech">
             <div class="future-block">
                 <img src="../../../public/img/feature.svg" alt="">
-                <h2>Future Technology Blog</h2>
-                <p>Stay informed with our blog section dedicated to future technology.</p>
+                <h2>{{ $t('feature.blogTitle') }}</h2>
+                <p>{{ $t('feature.blogDesc') }}</p>
             </div>
             <img src="../../../public/img/row.svg" alt="">
             <div class="future-cards">
-                <div class="future-card">
-                    <h3>Quantity</h3>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
-                </div>
-                <div class="future-card">
-                    <h3>Quantity</h3>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
-                </div>
-                <div class="future-card">
-                    <h3>Quantity</h3>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
-                </div>
-                <div class="future-card">
-                    <h3>Quantity</h3>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                <div class="future-card" v-for="i in 4" :key="i">
+                    <h3>{{ $t('feature.cardTitle') }}</h3>
+                    <p>{{ $t('feature.cardDesc') }}</p>
                 </div>
             </div>
         </div>
@@ -40,31 +28,20 @@
         <div class="future-tech">
             <div class="future-block">
                 <img src="../../../public/img/future2.svg" alt="">
-                <h2>Future Technology Blog</h2>
-                <p>Stay informed with our blog section dedicated to future technology.</p>
+                <h2>{{ $t('feature.blogTitle') }}</h2>
+                <p>{{ $t('feature.blogDesc') }}</p>
             </div>
             <img src="../../../public/img/row.svg" alt="">
             <div class="future-cards">
-                <div class="future-card">
-                    <h3>Quantity</h3>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
-                </div>
-                <div class="future-card">
-                    <h3>Quantity</h3>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
-                </div>
-                <div class="future-card">
-                    <h3>Quantity</h3>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
-                </div>
-                <div class="future-card">
-                    <h3>Quantity</h3>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                <div class="future-card" v-for="i in 4" :key="i">
+                    <h3>{{ $t('feature.cardTitle') }}</h3>
+                    <p>{{ $t('feature.cardDesc') }}</p>
                 </div>
             </div>
         </div>
     </Container>
 </template>
+
 
 <style scoped>
 .feature-section{
@@ -73,7 +50,7 @@
     border: 1px solid #262626;
 }
 .title{
-    padding: 6px 10px;
+    padding: 0px 10px;
     background-color: #333333;
     display: inline-block;
     font-family: Inter;
@@ -81,6 +58,9 @@
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 16px;
+}
+.title > p{
+    margin-top: 15px;
 }
 .title-h2{
     font-size: 58px;

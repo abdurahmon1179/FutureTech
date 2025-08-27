@@ -1,52 +1,54 @@
 <template>
 <section class="post-title-section">
-        <Container class="container">
-            <div class="post-title">
-                <div class="post-title-text">
-                    <div>Featured Videos</div>
-                    <p>Visual Insights for the Modern Viewer</p>
-                </div>
-                <div class="post-title-link">
-                    <button>
-                        <p>View All</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
-        </Container>
-    </section>
-    <Container class="container">
-        <div class="news-wrapper">
-            <div class="card-news">
-                <img src="../../../public/img/newsvideo1.svg" alt="">
-                <h3>Mars Exploration: Unveiling Alien Landscapes</h3>
-                <p>Embark on a journey through the Red Planet's breathtaking landscapes and uncover the mysteries of Mars.</p>
-            </div>
-            <img src="../../../public/img/newspage.svg" alt="">
-            <div class="card-news">
-                <img src="../../../public/img/newsvideo1.svg" alt="">
-                <h3>Mars Exploration: Unveiling Alien Landscapes</h3>
-                <p>Embark on a journey through the Red Planet's breathtaking landscapes and uncover the mysteries of Mars.</p>
-            </div>
-        </div>
-    </Container>
-    <hr>
-    <Container>
-        <div class="news-wrapper">
-            <div class="card-news">
-                <img src="../../../public/img/newsvideo1.svg" alt="">
-                <h3>Mars Exploration: Unveiling Alien Landscapes</h3>
-                <p>Embark on a journey through the Red Planet's breathtaking landscapes and uncover the mysteries of Mars.</p>
-            </div>
-            <img src="../../../public/img/newspage.svg" alt="">
-            <div class="card-news">
-                <img src="../../../public/img/newsvideo1.svg" alt="">
-                <h3>Mars Exploration: Unveiling Alien Landscapes</h3>
-                <p>Embark on a journey through the Red Planet's breathtaking landscapes and uncover the mysteries of Mars.</p>
-            </div>
-        </div>
-    </Container>
+  <Container class="container">
+    <div class="post-title">
+      <div class="post-title-text">
+        <div>{{ $t("featuredVideos.title") }}</div>
+        <p>{{ $t("featuredVideos.description") }}</p>
+      </div>
+      <div class="post-title-link">
+        <button>
+          <p>{{ $t("featuredVideos.viewAll") }}</p>
+          <img src="../../../public/img/topstrelka.svg" alt="">
+        </button>
+      </div>
+    </div>
+  </Container>
+</section>
+
+<Container class="container">
+  <div class="news-wrapper">
+    <div class="card-news">
+      <img src="../../../public/img/newsvideo1.svg" alt="">
+      <h3>{{ $t("featuredVideos.videos.0.title") }}</h3>
+      <p>{{ $t("featuredVideos.videos.0.description") }}</p>
+    </div>
+    <div class="card-news">
+      <img src="../../../public/img/newsvideo1.svg" alt="">
+      <h3>{{ $t("featuredVideos.videos.1.title") }}</h3>
+      <p>{{ $t("featuredVideos.videos.1.description") }}</p>
+    </div>
+  </div>
+</Container>
+
+<hr>
+
+<Container>
+  <div class="news-wrapper">
+    <div class="card-news">
+      <img src="../../../public/img/newsvideo1.svg" alt="">
+      <h3>{{ $t("featuredVideos.videos.0.title") }}</h3>
+      <p>{{ $t("featuredVideos.videos.0.description") }}</p>
+    </div>
+    <div class="card-news">
+      <img src="../../../public/img/newsvideo1.svg" alt="">
+      <h3>{{ $t("featuredVideos.videos.1.title") }}</h3>
+      <p>{{ $t("featuredVideos.videos.1.description") }}</p>
+    </div>
+  </div>
+</Container>
 </template>
+
 
 <style scoped>
 .post-title-section{
@@ -190,5 +192,9 @@ hr{
 </style>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import Container from "../layout/index.vue"
+
+const { t } = useI18n();
+const featuredVideos = t('featuredVideos'); 
 </script>

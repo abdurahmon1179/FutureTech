@@ -1,38 +1,47 @@
 <template>
-    <Container class="container">
-        <div class="news-title">
-            <h1>Unlock a World of </h1>
-            <div>
-                <h1>Knowledge</h1>
-                <p>Explore the latest news from around the world. We bring you up-to-the-minute updates on the most significant events, trends, and stories. Discover the world through our news coverage.</p>
-            </div>
-        </div>
-    </Container>
-    <hr>
-    <Container>
-        <div class="card-wrapper">
-                <div class="card card1">
-                    <h3>300 <span>+</span></h3>
-                    <p>Resources available</p>
-                </div>
-                <img src="../../../public/img/row.svg" alt="">
-                <div class="card card2">
-                    <h3>12k <span>+</span></h3>
-                    <p>Total Downloads</p>
-                </div>
-                <img src="../../../public/img/row.svg" alt="">
-                <div class="card card3">
-                    <h3>10k <span>+</span></h3>
-                    <p>Active Users</p>
-                </div>
-                <img src="../../../public/img/row.svg" alt="">
-                <div class="card card3">
-                    <h3>100 <span>+</span></h3>
-                    <p>Countries Accesses</p>
-                </div>
-            </div>
-    </Container>
+  <Container class="container">
+    <div class="news-title">
+      <h1>{{ $t("news.unlock") }}</h1>
+      <div>
+        <h1>{{ $t("news.knowledge") }}</h1>
+        <p>{{ $t("news.explore") }}</p>
+      </div>
+    </div>
+  </Container>
+
+  <hr />
+
+  <Container>
+    <div class="card-wrapper">
+      <div class="card card1">
+        <h3>300 <span>+</span></h3>
+        <p>{{ $t("news.resources") }}</p>
+      </div>
+
+      <img src="../../../public/img/row.svg" alt="" />
+
+      <div class="card card2">
+        <h3>12k <span>+</span></h3>
+        <p>{{ $t("news.downloads") }}</p>
+      </div>
+
+      <img src="../../../public/img/row.svg" alt="" />
+
+      <div class="card card3">
+        <h3>10k <span>+</span></h3>
+        <p>{{ $t("news.users") }}</p>
+      </div>
+
+      <img src="../../../public/img/row.svg" alt="" />
+
+      <div class="card card3">
+        <h3>100 <span>+</span></h3>
+        <p>{{ $t("news.countries") }}</p>
+      </div>
+    </div>
+  </Container>
 </template>
+
 
 <style scoped>
 .news-title{

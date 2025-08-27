@@ -3,32 +3,31 @@
     <Container class="title-container">
         <div class="news-title">
             <div class="title-text">
-                <span >
-                    Your Gateway to In-Depth Information
-                </span>
-                <h2>Unlock Valuable Knowledge with FutureTech's Resources</h2>
+                <span>{{ $t('resources.subtitle') }}</span>
+                <h2>{{ $t('resources.title') }}</h2>
             </div>
             <button>
-                <p>View All Resources</p>
+                <p>{{ $t('resources.viewAll') }}</p>
                 <img src="../../../public/img/topstrelka.svg" alt="">
             </button>
         </div>
     </Container>
 </section>
+
 <Container class="body-container">
     <div class="news-line">
         <div class="news-block">
             <img src="../../../public/img/newslogo.svg" alt="">
-            <h2>Ebooks</h2>
-            <p>Explore our collection of ebooks covering a wide spectrum of future technology topics.</p>
+            <h2>{{ $t('resources.ebooks.title') }}</h2>
+            <p>{{ $t('resources.ebooks.desc') }}</p>
             <button>
-                <p>Download Ebooks Now</p>
+                <p>{{ $t('resources.ebooks.download') }}</p>
                 <img src="../../../public/img/topstrelka.svg" alt="">
             </button>
             <div>
                 <div>
-                    <p>Download Ebooks Now</p>
-                    <h3>10k + Users</h3>
+                    <p>{{ $t('resources.ebooks.download') }}</p>
+                    <h3>{{ $t('resources.ebooks.users') }}</h3>
                 </div>
                 <img src="../../../public/img/users.svg" alt="">
             </div>
@@ -36,48 +35,50 @@
         <img src="../../../public/img/row.svg" alt="">
         <div class="news-blog2">
             <div class="news-title2">
-                <h2>Variety Topics</h2>
-                <p>Topics include AI in education (25%), renewable (20%), healthcare (15%),  exploration (25%), and biotechnology (15%).</p>
+                <h2>{{ $t('resources.ebooks.varietyTitle') }}</h2>
+                <p>{{ $t('resources.ebooks.varietyDesc') }}</p>
             </div>
             <img src="../../../public/img/news2.svg" alt="">
             <div class="news-card">
                 <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
+                    <p>{{ $t('resources.ebooks.total') }}</p>
+                    <h3>{{ $t('resources.ebooks.totalDesc') }}</h3>
                 </div>
                 <div class="new-blog-format">
                     <div class="format-text">
-                        <p>Download Formats</p>
-                        <h3>PDF format for access.</h3>
+                        <p>{{ $t('resources.ebooks.format') }}</p>
+                        <h3>{{ $t('resources.ebooks.formatDesc') }}</h3>
                     </div>
                     <button>
-                        <p>Preview</p>
+                        <p>{{ $t('resources.ebooks.preview') }}</p>
                         <img src="../../../public/img/eye.svg" alt="">
                     </button>
                 </div>
             </div>
             <div class="new-blog-author">
-                <p>Average Author Expertise</p>
-                <h3>Ebooks are authored by renowned with an average of 15 years of experience</h3>
-            </div>      
+                <p>{{ $t('resources.ebooks.expertise') }}</p>
+                <h3>{{ $t('resources.ebooks.expertiseDesc') }}</h3>
+            </div>
         </div>
     </div>
 </Container>
+
 <hr>
+
 <Container class="body-container">
     <div class="news-line">
         <div class="news-block">
             <img src="../../../public/img/newslogo2.svg" alt="">
-            <h2>Whitepapers</h2>
-            <p>Explore our collection of ebooks covering a wide spectrum of future technology topics.</p>
+            <h2>{{ $t('resources.whitepapers.title') }}</h2>
+            <p>{{ $t('resources.whitepapers.desc') }}</p>
             <button>
-                <p>Download Ebooks Now</p>
+                <p>{{ $t('resources.whitepapers.download') }}</p>
                 <img src="../../../public/img/topstrelka.svg" alt="">
             </button>
             <div>
                 <div>
-                    <p>Download Ebooks Now</p>
-                    <h3>10k + Users</h3>
+                    <p>{{ $t('resources.whitepapers.download') }}</p>
+                    <h3>{{ $t('resources.whitepapers.users') }}</h3>
                 </div>
                 <img src="../../../public/img/users.svg" alt="">
             </div>
@@ -85,34 +86,35 @@
         <img src="../../../public/img/row.svg" alt="">
         <div class="news-blog2">
             <div class="news-title2">
-                <h2>Variety Topics</h2>
-                <p>Topics include AI in education (25%), renewable (20%), healthcare (15%),  exploration (25%), and biotechnology (15%).</p>
+                <h2>{{ $t('resources.whitepapers.varietyTitle') }}</h2>
+                <p>{{ $t('resources.whitepapers.varietyDesc') }}</p>
             </div>
             <img src="../../../public/img/news3.svg" alt="">
             <div class="news-card">
                 <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
+                    <p>{{ $t('resources.whitepapers.total') }}</p>
+                    <h3>{{ $t('resources.whitepapers.totalDesc') }}</h3>
                 </div>
                 <div class="new-blog-format">
                     <div class="format-text">
-                        <p>Download Formats</p>
-                        <h3>PDF format for access.</h3>
+                        <p>{{ $t('resources.whitepapers.format') }}</p>
+                        <h3>{{ $t('resources.whitepapers.formatDesc') }}</h3>
                     </div>
                     <button>
-                        <p>Preview</p>
+                        <p>{{ $t('resources.whitepapers.preview') }}</p>
                         <img src="../../../public/img/eye.svg" alt="">
                     </button>
                 </div>
             </div>
             <div class="new-blog-author">
-                <p>Average Author Expertise</p>
-                <h3>Whitepapers are authored by subject matter experts with an average of 20 years of experience.</h3>
+                <p>{{ $t('resources.whitepapers.expertise') }}</p>
+                <h3>{{ $t('resources.whitepapers.expertiseDesc') }}</h3>
             </div>      
         </div>
     </div>
 </Container>
 </template>
+
 
 <style scoped>
 section{
@@ -144,12 +146,15 @@ section{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 18px 24px;
+    padding: 10px 24px;
     background-color: #141414;
     border: 1px solid #262626;
     border-radius: 12px;
     color: #98989A;
     font-size: 18px;
+}
+.news-title > button > p{
+    margin-top: 12px;
 }
 .news-block{
     padding: 155px 0;
@@ -178,12 +183,15 @@ section{
     justify-content: center;
     color: #98989A;
     width: 100%;
-    padding: 18px 0;
+    padding: 10px 0;
     background-color: #1A1A1A;
     border: 1px solid #262626;
     border-radius: 8px;
     gap: 10px;
     margin-bottom: 60px;
+}
+.news-block > button > p{
+    margin-top: 12px;
 }
 .news-block > div{
     padding: 30px;
@@ -281,12 +289,15 @@ section{
 .new-blog-format > button{
     display: flex;
     align-items: center;
-    padding: 18px 24px;
+    padding: 10px 24px;
     background-color: #141414;
     border: 1px solid #262626;
     gap: 10px;
     border-radius: 10px;
     color: #98989A;
+}
+.new-blog-format > button > p{
+    margin-top: 12px;
 }
 .news-card{
     display: flex;

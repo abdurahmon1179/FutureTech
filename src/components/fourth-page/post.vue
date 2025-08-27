@@ -3,24 +3,25 @@
         <Container class="title-container">
             <div class="post-title">
                 <div class="post-title-text">
-                    <div>Dive into the Details</div>
-                    <p>In-Depth Reports and Analysis</p>
+                    <div>{{ $t("postTitle.title") }}</div>
+                    <p>{{ $t("postTitle.subtitle") }}</p>
                 </div>
                 <div class="post-title-link">
                     <button>
-                        <p>Whitepapers</p>
+                        <p>{{ $t("postTitle.whitepapers") }}</p>
                     </button>
                     <button>
-                        <p>Ebooks</p>
+                        <p>{{ $t("postTitle.ebooks") }}</p>
                     </button>
                     <button>
-                        <p>Reports</p>
+                        <p>{{ $t("postTitle.reports") }}</p>
                     </button>
                 </div>
             </div>
         </Container>
     </section>
 </template>
+
 
 <style scoped>
 .post-title-section{
@@ -62,7 +63,7 @@
     gap: 10px;
     background-color: #141414;
     border: 1px solid #262626;
-    padding: 18px 24px;
+    padding: 10px 24px;
     border-radius: 12px;
     cursor: pointer;
     width: 100%; 
@@ -75,6 +76,7 @@
 .post-title-link > button > p {
     font-family: Inter;
     color: #98989A;
+    margin-top: 10px;
 }
 
 .post-title-link > button:hover > p {

@@ -1,81 +1,82 @@
 <template>
-    <hr>
-    <Container class="body-container">
-        <div class="news-line">
-            <div class="news-block">
-                <img src="../../../public/img/newslogo.svg" alt="">
-                <h2>Get in Touch with AI Podcasts</h2>
-            </div>
-            <img src="../../../public/img/row.svg" alt="">
-            <div class="news-blog2">
-                <div class="name-input">
-                    <div class="first-name input">
-                        <p>First Name</p>
-                        <input type="text" placeholder="Enter First Name">
-                    </div>
-                    <div class="last-name input">
-                        <p>Last Name</p>
-                        <input type="text" placeholder="Enter Last Name">
-                    </div>
-                </div>
-
-
-
-                <div class="name-input">
-                    <div class="first-name input">
-                        <p>Email</p>
-                        <input type="text" placeholder="Enter your Email">
-                    </div>
-                    <div class="phone">
-                        <p>Phone Number</p>
-                        <div class="flag input">
-                            <input type="text" placeholder="Enter Last Name">
-                            <span>
-                                <img src="../../../public/img/india.svg" alt="">
-                                <img src="../../../public/img/strelka.svg" alt="">
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="message">
-                    <p>Message</p>
-                    <input type="text" placeholder="Enter your Message">
-                </div>
-                <div class="send">
-                    <span>
-                        <input type="checkbox">
-                        <p>I agree with Terms of Use and Privacy Policy</p>
-                    </span>
-                    <button>Send</button>
-                </div>
-            </div>
+  <hr>
+  <Container class="body-container">
+    <div class="news-line">
+      <div class="news-block">
+        <img src="../../../public/img/newslogo.svg" alt="">
+        <h2>{{ $t("form.title") }}</h2>
+      </div>
+      <img src="../../../public/img/row.svg" alt="">
+      <div class="news-blog2">
+        <div class="name-input">
+          <div class="first-name input">
+            <p>{{ $t("form.firstName") }}</p>
+            <input type="text" :placeholder="$t('form.enterFirstName')">
+          </div>
+          <div class="last-name input">
+            <p>{{ $t("form.lastName") }}</p>
+            <input type="text" :placeholder="$t('form.enterLastName')">
+          </div>
         </div>
-    </Container>
-    <hr>
-    <Container class="body-container">
-        <div class="news-line">
-            <div class="news-block second">
-                <img src="../../../public/img/newslogo2.svg" alt="">
-                <h2>Get in Touch with AI Podcasts</h2>
-                <p>If the question is not available on our FAQ section, Feel free to contact us personally, we will
-                    resolve your respective doubts. </p>
-            </div>
-            <img src="../../../public/img/row.svg" alt="">
-            <div class="news-blog2">
-                <div v-for="(item, index) in accordions" :key="index" class="accordion">
-    <div class="accordion-title" @click="toggle(index)">
-      <h2>{{ item.title }}</h2>
-      <img :src="activeIndex === index ? '/img/minus.svg' : '/img/plus.svg'" alt="toggle">
-    </div>
 
-    <div class="accordion-body" v-show="activeIndex === index">
-      <p>{{ item.content }}</p>
-    </div>
-  </div>
+        <div class="name-input">
+          <div class="first-name input">
+            <p>{{ $t("form.email") }}</p>
+            <input type="text" :placeholder="$t('form.enterEmail')">
+          </div>
+          <div class="phone">
+            <p>{{ $t("form.phone") }}</p>
+            <div class="flag input">
+              <input type="text" :placeholder="$t('form.enterPhone')">
+              <span>
+                <img src="../../../public/img/india.svg" alt="">
+                <img src="../../../public/img/strelka.svg" alt="">
+              </span>
             </div>
+          </div>
         </div>
-    </Container>
+
+        <div class="message">
+          <p>{{ $t("form.message") }}</p>
+          <input type="text" :placeholder="$t('form.enterMessage')">
+        </div>
+
+        <div class="send">
+          <span>
+            <input type="checkbox">
+            <p>{{ $t("form.terms") }}</p>
+          </span>
+          <button>{{ $t("form.send") }}</button>
+        </div>
+      </div>
+    </div>
+  </Container>
+
+  <hr>
+
+  <Container class="body-container">
+    <div class="news-line">
+      <div class="news-block second">
+        <img src="../../../public/img/newslogo2.svg" alt="">
+        <h2>{{ $t("faq.title") }}</h2>
+        <p>{{ $t("faq.desc") }}</p>
+      </div>
+      <img src="../../../public/img/row.svg" alt="">
+      <div class="news-blog2">
+        <div v-for="(item, index) in accordions" :key="index" class="accordion">
+          <div class="accordion-title" @click="toggle(index)">
+            <h2>{{ item.title }}</h2>
+            <img :src="activeIndex === index ? '/img/minus.svg' : '/img/plus.svg'" alt="toggle">
+          </div>
+          <div class="accordion-body" v-show="activeIndex === index">
+            <p>{{ item.content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
 </template>
+
 
 <style scoped>
 .news-block {
@@ -245,6 +246,7 @@ hr {
 .send>span>p {
     font-family: Inter;
     font-size: 18px;
+    margin-top: 15px;
 }
 
 .send {
@@ -286,7 +288,7 @@ hr {
     font-weight: 500;
 }
 
-.accordion-title > img{
+.accordion-title>img {
     cursor: pointer;
 }
 
@@ -343,16 +345,20 @@ hr {
     .news-block>p {
         width: 100%;
     }
-    .input{
+
+    .input {
         width: 100%;
     }
-    .phone{
+
+    .phone {
         width: 100%;
     }
-    .input > input{
+
+    .input>input {
         width: 100%;
     }
-    .accordion{
+
+    .accordion {
         width: 100%;
     }
 }
@@ -385,8 +391,8 @@ hr {
     }
 }
 
-@media(max-width:780px){
-    .send > span > p{
+@media(max-width:780px) {
+    .send>span>p {
         font-size: 14px;
     }
 }
@@ -397,8 +403,8 @@ hr {
     }
 }
 
-@media(max-width:720px){
-    .name-input{
+@media(max-width:720px) {
+    .name-input {
         flex-wrap: wrap;
     }
 }
@@ -410,7 +416,8 @@ hr {
         align-items: start;
         gap: 20px;
     }
-    .send > button{
+
+    .send>button {
         padding: 15px;
     }
 }
@@ -446,7 +453,7 @@ hr {
         font-size: 30px;
     }
 
-    .accordion-title > h2{
+    .accordion-title>h2 {
         font-size: 18px;
         font-weight: 400;
     }
@@ -473,11 +480,11 @@ hr {
         width: 100%;
     }
 
-    .accordion-title > h2{
+    .accordion-title>h2 {
         font-size: 14px;
     }
 
-    .send > span > p{
+    .send>span>p {
         font-size: 12px;
     }
 }
@@ -490,14 +497,14 @@ import { ref } from "vue";
 const activeIndex = ref(null);
 
 const accordions = [
-  { title: "What is AI?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." },
-  { title: "How can I listen to your podcasts?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." },
-  { title: "Are your podcasts free to listen to?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." },
-  { title: "Can I download episodes to listen offline?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." },
-  { title: "How often do you release new episodes?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." }
+    { title: "What is AI?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." },
+    { title: "How can I listen to your podcasts?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." },
+    { title: "Are your podcasts free to listen to?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." },
+    { title: "Can I download episodes to listen offline?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." },
+    { title: "How often do you release new episodes?", content: "AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making." }
 ];
 
 function toggle(index) {
-  activeIndex.value = activeIndex.value === index ? null : index;
+    activeIndex.value = activeIndex.value === index ? null : index;
 } 
 </script>

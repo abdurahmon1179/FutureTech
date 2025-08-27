@@ -1,53 +1,55 @@
 <template>
 <section>
-    <Container class="container">
-        <div class="aboutus-title first">
-            <img src="../../../public/img/aboutus.svg" alt="">
-            <div class="aboutus-title-text">
-                <span>Learn, Connect, and Innovate</span>
-                <h2>Be Part of the Future Tech Revolution</h2>
-                <p>Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.</p>
-            </div>
-        </div>
-        <div class="aboutus-title second">
-            <div class="title-logo">
-                <img src="../../../public/img/aboutus.svg" alt="">
-                
-            </div>
-            <div class="aboutus-title-text">
-                <span>Learn, Connect, and Innovate</span>
-                <h2>Be Part of the Future Tech Revolution</h2>
-                <p>Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.</p>
-            </div>
-        </div>
-        <div class="abputus-cards">
-            <div class="aboutus-card">
-                <div class="aboutus-card-title">
-                    <p>Resource Access</p>
-                    <img src="../../../public/img/aboutus2.svg" alt="">
-                </div>
-                <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
-            </div>
+  <Container class="container">
+    <div class="aboutus-title first">
+      <img src="../../../public/img/aboutus.svg" alt="">
+      <div class="aboutus-title-text">
+        <span>{{ $t('about.title1') }}</span>
+        <h2>{{ $t('about.subtitle1') }}</h2>
+        <p>{{ $t('about.text1') }}</p>
+      </div>
+    </div>
 
-            <div class="aboutus-card">
-                <div class="aboutus-card-title">
-                    <p>Resource Access</p>
-                    <img src="../../../public/img/aboutus2.svg" alt="">
-                </div>
-                <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
-            </div>
+    <div class="aboutus-title second">
+      <div class="title-logo">
+        <img src="../../../public/img/aboutus.svg" alt="">
+      </div>
+      <div class="aboutus-title-text">
+        <span>{{ $t('about.title1') }}</span>
+        <h2>{{ $t('about.subtitle1') }}</h2>
+        <p>{{ $t('about.text1') }}</p>
+      </div>
+    </div>
 
-            <div class="aboutus-card">
-                <div class="aboutus-card-title">
-                    <p>Resource Access</p>
-                    <img src="../../../public/img/aboutus2.svg" alt="">
-                </div>
-                <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
-            </div>
+    <div class="abputus-cards">
+      <div class="aboutus-card">
+        <div class="aboutus-card-title">
+          <p>{{ $t('about.card1_title') }}</p>
+          <img src="../../../public/img/aboutus2.svg" alt="">
         </div>
-    </Container>
+        <p>{{ $t('about.card1_text') }}</p>
+      </div>
+
+      <div class="aboutus-card">
+        <div class="aboutus-card-title">
+          <p>{{ $t('about.card1_title') }}</p>
+          <img src="../../../public/img/aboutus2.svg" alt="">
+        </div>
+        <p>{{ $t('about.card1_text') }}</p>
+      </div>
+
+      <div class="aboutus-card">
+        <div class="aboutus-card-title">
+          <p>{{ $t('about.card1_title') }}</p>
+          <img src="../../../public/img/aboutus2.svg" alt="">
+        </div>
+        <p>{{ $t('about.card1_text') }}</p>
+      </div>
+    </div>
+  </Container>
 </section>
 </template>
+
 
 <style scoped>
 section{
@@ -121,7 +123,6 @@ section{
 
 .aboutus-card-title img:hover { 
   cursor: pointer;
-  /* filter: invert(71%) sepia(90%) saturate(2479%) hue-rotate(2deg) brightness(106%) contrast(104%); */
   opacity: 0.5;
 }
 @media (max-width:1400px){

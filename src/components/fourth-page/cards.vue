@@ -4,8 +4,8 @@
         <div class="news-wrapper">
             <div class="card-news row">
                 <img src="../../../public/img/new.svg" alt="">
-                <p>A Decisive Victory for Progressive Policies</p>
-                <span>Politics</span>
+                <p>{{ $t('news.card1.text') }}</p>
+                <span>{{ $t('news.card1.category') }}</span>
                 <div class="card-news-active">
                     <div>
                         <img src="../../../public/img/newslike.svg" alt="">
@@ -13,7 +13,7 @@
                     </div>
                     
                     <button>
-                        <p>Read More</p>
+                        <p>{{ $t('news.readMore') }}</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
@@ -21,15 +21,15 @@
             <img src="../../../public/img/rowhr.svg" alt="">
             <div class="card-news">
                 <img src="../../../public/img/new2.svg" alt="">
-                <p>A Decisive Victory for Progressive Policies</p>
-                <span>Politics</span>
+                <p>{{ $t('news.card2.text') }}</p>
+                <span>{{ $t('news.card2.category') }}</span>
                 <div class="card-news-active">
                     <div>
                         <img src="../../../public/img/newslike.svg" alt="">
                         <img src="../../../public/img/newsshare.svg" alt="">
                     </div>
                     <button>
-                        <p>Read More</p>
+                        <p>{{ $t('news.readMore') }}</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
@@ -37,15 +37,15 @@
             <img src="../../../public/img/rowhr.svg" alt="">
             <div class="card-news">
                 <img src="../../../public/img/new3.svg" alt="">
-                <p>A Decisive Victory for Progressive Policies</p>
-                <span>Politics</span>
+                <p>{{ $t('news.card3.text') }}</p>
+                <span>{{ $t('news.card3.category') }}</span>
                 <div class="card-news-active">
                     <div>
                         <img src="../../../public/img/newslike.svg" alt="">
                         <img src="../../../public/img/newsshare.svg" alt="">
                     </div>
                     <button>
-                        <p>Read More</p>
+                        <p>{{ $t('news.readMore') }}</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
@@ -53,6 +53,8 @@
         </div>
     </Container>
 </template>
+
+
 
 <style scoped>
 .news-wrapper{
@@ -87,7 +89,7 @@
     gap: 10px;
 }
 .card-news-active > button{
-    padding: 18px 60px;
+    padding: 10px 60px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -96,6 +98,9 @@
     border-radius: 12px;
     color: #98989A;
     cursor: pointer;
+}
+.card-news-active > button > p{
+    margin-top: 10px;
 }
 .card-news > img{
     width: 450px;

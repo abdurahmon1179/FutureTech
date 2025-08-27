@@ -1,95 +1,95 @@
 <template>
-<Container class="body-container">
+  <Container class="body-container">
     <div class="news-line">
-        <div class="news-block">
-            <img src="../../../public/img/newslogo.svg" alt="">
-            <span>
-                <h2>AI Revolution</h2>
-                <img src="../../../public/img/stars.svg" alt="">
-            </span>
-            <div>
-                <span>
-                    <h3>Host</h3>
-                    <p>Dr. Sarah Mitchell</p>
-                </span>
-                <button>
-                    <p>Listen Podcast</p>
-                    <img src="../../../public/img/topstrelka.svg" alt="">
-                </button>
-            </div>
+      <div class="news-block">
+        <img src="../../../public/img/newslogo.svg" alt="">
+        <span>
+          <h2>{{ t("podcast.card1.title") }}</h2>
+          <img src="../../../public/img/stars.svg" alt="">
+        </span>
+        <div>
+          <span>
+            <h3>{{ t("podcast.host") }}</h3>
+            <p>{{ t("podcast.card1.hostName") }}</p>
+          </span>
+          <button>
+            <p>{{ t("podcast.listenButton") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
         </div>
-        <img src="../../../public/img/row.svg" alt="">
-        <div class="news-blog2">
-            <img src="../../../public/img/podcast.svg" alt="">
-            <div class="new-card-title">
-                <div class="text">
-                    <h2>Delves into the transformative impact of AI</h2>
-                     <p>Join Dr. Sarah Mitchell as she delves into the transformative impact of AI on industries, featuring expert interviews and real-world case studies. Explore the possibilities of AI in healthcare, finance, and more.</p>
-                </div>
-            </div>
-            <div class="news-card">
-                <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
-                </div>
-                <div class="new-blog-format format-text">
-                    <p>Category</p>
-                    <h3>Quantum Computing</h3>
-                </div>
-                <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
-                </div>
-            </div>    
+      </div>
+      <img src="../../../public/img/row.svg" alt="">
+      <div class="news-blog2">
+        <img src="../../../public/img/podcast.svg" alt="">
+        <div class="new-card-title">
+          <div class="text">
+            <h2>{{ t("podcast.card1.subtitle") }}</h2>
+            <p>{{ t("podcast.card1.description") }}</p>
+          </div>
         </div>
+        <div class="news-card">
+          <div class="new-blog-card">
+            <p>{{ t("podcast.totalEbooks") }}</p>
+            <h3>{{ t("podcast.card1.ebooks") }}</h3>
+          </div>
+          <div class="new-blog-format format-text">
+            <p>{{ t("podcast.category") }}</p>
+            <h3>{{ t("podcast.card1.categoryName") }}</h3>
+          </div>
+          <div class="new-blog-card">
+            <p>{{ t("podcast.totalEbooks") }}</p>
+            <h3>{{ t("podcast.card1.ebooks") }}</h3>
+          </div>
+        </div>
+      </div>
     </div>
-</Container>
-<hr>
-<Container class="body-container">
+  </Container>
+  <hr>
+  <Container class="body-container">
     <div class="news-line">
-        <div class="news-block">
-            <img src="../../../public/img/newslogo2.svg" alt="">
-            <span>
-                <h2>AI Conversations</h2>
-                <img src="../../../public/img/stars.svg" alt="">
-            </span>
-            <div>
-                <span>
-                    <h3>Host</h3>
-                    <p>Mark Anderson</p>
-                </span>
-                <button>
-                    <p>Listen Podcast</p>
-                    <img src="../../../public/img/topstrelka.svg" alt="">
-                </button>
-            </div>
+      <div class="news-block">
+        <img src="../../../public/img/newslogo2.svg" alt="">
+        <span>
+          <h2>{{ t("podcast.card2.title") }}</h2>
+          <img src="../../../public/img/stars.svg" alt="">
+        </span>
+        <div>
+          <span>
+            <h3>{{ t("podcast.host") }}</h3>
+            <p>{{ t("podcast.card2.hostName") }}</p>
+          </span>
+          <button>
+            <p>{{ t("podcast.listenButton") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
         </div>
-        <img src="../../../public/img/row.svg" alt="">
-        <div class="news-blog2">
-            <img src="../../../public/img/ai.svg" alt="">
-            <div class="new-card-title">
-                <div class="text">
-                    <h2>Engage in thought-provoking conversations experts.</h2>
-                     <p>Mark discusses the future of AI, the impact on society, and how it's shaping industries worldwide. Engage in thought-provoking conversations with leading experts.</p>
-                </div>
-            </div>
-            <div class="news-card">
-                <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
-                </div>
-                <div class="new-blog-format format-text">
-                    <p>Category</p>
-                    <h3>Quantum Computing</h3>
-                </div>
-                <div class="new-blog-card">
-                    <p>Total Ebooks</p>
-                    <h3>Over 100 ebooks</h3>
-                </div>
-            </div>    
+      </div>
+      <img src="../../../public/img/row.svg" alt="">
+      <div class="news-blog2">
+        <img src="../../../public/img/ai.svg" alt="">
+        <div class="new-card-title">
+          <div class="text">
+            <h2>{{ t("podcast.card2.subtitle") }}</h2>
+            <p>{{ t("podcast.card2.description") }}</p>
+          </div>
         </div>
+        <div class="news-card">
+          <div class="new-blog-card">
+            <p>{{ t("podcast.totalEbooks") }}</p>
+            <h3>{{ t("podcast.card2.ebooks") }}</h3>
+          </div>
+          <div class="new-blog-format format-text">
+            <p>{{ t("podcast.category") }}</p>
+            <h3>{{ t("podcast.card2.categoryName") }}</h3>
+          </div>
+          <div class="new-blog-card">
+            <p>{{ t("podcast.totalEbooks") }}</p>
+            <h3>{{ t("podcast.card2.ebooks") }}</h3>
+          </div>
+        </div>
+      </div>
     </div>
-</Container>
+  </Container>
 </template>
 
 <style scoped>
@@ -305,12 +305,15 @@ hr{
 .news-block > div > button{
     display: flex;
     align-items: center;
-    padding: 18px 24px;
+    padding: 10px 24px;
     background-color: #141414;
     border: 1px solid #262626;
     border-radius: 12px;
     color: white;
     font-family: Inter;
+}
+.news-block > div > button > p{
+    margin-top: 10px;
 }
 .news-block > div{
     width: 500px;
@@ -455,4 +458,7 @@ hr{
 
 <script setup>
 import Container from "../layout/index.vue"
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+
 </script>

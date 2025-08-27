@@ -1,8 +1,8 @@
 <template>
   <Container class="nav">
     <div class="nav-bar-top">
-      <p>Subscribe to our Newsletter For New & latest Blogs and Resources</p>
-      <img src="../../../public/img/topstrelka.svg" alt="">
+      <p>{{ $t('navbar.subscribe') }}</p>
+      <img src="../../../public/img/topstrelka.svg" alt="" />
     </div>
   </Container>
 
@@ -10,57 +10,80 @@
     <Container class="nav">
       <div class="nav-bar-wrapper">
         <a href="/">
-          <img src="../../../public/img/logo.svg" alt="">
+          <img src="../../../public/img/logo.svg" alt="logo" />
         </a>
         <ul>
           <li>
-            <router-link to="/" class="link" active-class="active">Home</router-link>
+            <router-link to="/" class="link" active-class="active">{{ $t('navbar.home') }}</router-link>
           </li>
           <li>
-            <router-link to="/second" class="link" active-class="active">News</router-link>
+            <router-link to="/second" class="link" active-class="active">{{ $t('navbar.news') }}</router-link>
           </li>
           <li>
-            <router-link to="/podcast" class="link" active-class="active">Podcasts</router-link>
+            <router-link to="/podcast" class="link" active-class="active">{{ $t('navbar.podcasts') }}</router-link>
           </li>
           <li>
-            <router-link to="/fourth" class="link" active-class="active">Resources</router-link>
+            <router-link to="/fourth" class="link" active-class="active">{{ $t('navbar.resources') }}</router-link>
           </li>
         </ul>
 
-        <router-link to="/login" class="login login-page">Contact Us</router-link>
+        <div>
+          <a-dropdown class="language">
+            <a class="ant-dropdown-link" @click.prevent>
+              {{ currentLang }}
+              <DownOutlined />
+            </a>
+            <template #overlay>
+              <a-menu>
+                <a-menu-item key="uz" @click="changeLang('uz')">UZ</a-menu-item>
+                <a-menu-item key="ru" @click="changeLang('ru')">RU</a-menu-item>
+                <a-menu-item key="en" @click="changeLang('en')">EN</a-menu-item>
+              </a-menu>
+            </template>
+          </a-dropdown>
 
+          <router-link to="/login" class="login login-page">{{ $t('navbar.contact') }}</router-link>
+        </div>
 
-        <img
-          class="burger-menu"
-          src="../../../public/img/burger.svg"
-          alt="menu"
-          @click="toggleMenu"
-        >
+        <img class="burger-menu" src="../../../public/img/burger.svg" alt="menu" @click="toggleMenu" />
       </div>
     </Container>
   </div>
 
-
   <transition name="slide">
     <div class="mobile-nav" v-if="menuOpen">
       <div class="mobile-nav-inner">
-        <router-link to="/" class="m-link" @click="closeMenu">Home</router-link>
-        <router-link to="/second" class="m-link" @click="closeMenu">News</router-link>
-        <router-link to="/podcast" class="m-link" @click="closeMenu">Podcasts</router-link>
-        <router-link to="/fourth" class="m-link" @click="closeMenu">Resources</router-link>
-        <router-link to="/login" class="m-login" @click="closeMenu">Contact Us</router-link>
+        <a-dropdown class="language mb-lang">
+          <a class="ant-dropdown-link" @click.prevent>
+            {{ currentLang }}
+            <DownOutlined />
+          </a>
+          <template #overlay>
+            <a-menu>
+              <a-menu-item key="uz" @click="changeLang('uz')">UZ</a-menu-item>
+              <a-menu-item key="ru" @click="changeLang('ru')">RU</a-menu-item>
+              <a-menu-item key="en" @click="changeLang('en')">EN</a-menu-item>
+            </a-menu>
+          </template>
+        </a-dropdown>
+        <router-link to="/" class="m-link" @click="closeMenu">{{ $t('navbar.home') }}</router-link>
+        <router-link to="/second" class="m-link" @click="closeMenu">{{ $t('navbar.news') }}</router-link>
+        <router-link to="/podcast" class="m-link" @click="closeMenu">{{ $t('navbar.podcasts') }}</router-link>
+        <router-link to="/fourth" class="m-link" @click="closeMenu">{{ $t('navbar.resources') }}</router-link>
+        <router-link to="/login" class="m-login" @click="closeMenu">{{ $t('navbar.contact') }}</router-link>
       </div>
     </div>
   </transition>
 </template>
 
+
 <style scoped>
 .link {
   text-decoration: none;
   color: #98989A;
-  padding: 12px 16px;
+  padding: 14px 24px;
   border-radius: 10px;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
   transition: 0.3s;
 }
 
@@ -69,7 +92,7 @@
   align-items: center;
   justify-self: center;
   gap: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .nav-bar-top>p {
@@ -77,6 +100,7 @@
   font-weight: 400;
   font-family: inter;
   color: #98989A;
+  padding-top: 10px;
 }
 
 .nav-bar {
@@ -203,14 +227,21 @@
 .slide-leave-active {
   transition: all 0.3s ease;
 }
+
 .slide-enter-from,
 .slide-leave-to {
   transform: translateX(-100%);
   opacity: 0;
 }
 
+.language {
+  cursor: pointer;
+  margin-right: 20px;
+}
 
-@media(max-width:860px) {
+
+
+@media(max-width:980px) {
   .nav-bar-wrapper>ul {
     display: none;
   }
@@ -223,8 +254,16 @@
     display: block;
   }
 
-  .nav-bar-top>p {
-    font-size: 12px;
+  .language {
+    display: none;
+  }
+
+  .mb-lang {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -150px;
   }
 }
 
@@ -232,6 +271,11 @@
   .nav-bar-top {
     max-width: 100%;
   }
+
+  .nav-bar-wrapper>ul {
+    margin-top: 20px;
+  }
+
   .nav {
     width: 100%;
   }
@@ -241,6 +285,8 @@
 <script setup>
 import { ref, watch } from 'vue'
 import Container from "../layout/index.vue"
+import { DownOutlined, UserOutlined } from '@ant-design/icons-vue'
+import { useI18n } from 'vue-i18n'
 
 const menuOpen = ref(false)
 
@@ -252,10 +298,14 @@ const closeMenu = () => {
 }
 
 watch(menuOpen, (val) => {
-  if (val) {
-    document.body.style.overflow = 'hidden'
-  } else {
-    document.body.style.overflow = ''
-  }
+  document.body.style.overflow = val ? 'hidden' : ''
 })
+
+const { locale } = useI18n()
+const currentLang = ref('EN')
+
+function changeLang(lang) {
+  locale.value = lang.toLowerCase()
+  currentLang.value = lang.toUpperCase()
+}
 </script>

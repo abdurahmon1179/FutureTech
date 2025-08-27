@@ -1,62 +1,63 @@
 <template>
-    <Container class="container">
-        <div class="adres-info-wrap">
-            <div class="info">
-                <h2>General Inquiries</h2>
-                <div class="info-button">
-                    <button>
-                        <p>contact@ai-podcasts.com</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                    <button>
-                        <p>+1 (123) 456-7890</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
-
-            <div class="info">
-                <h2>Technical Support</h2>
-                <div class="info-button">
-                    <button>
-                        <p>contact@ai-podcasts.com</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                    <button>
-                        <p>+1 (123) 456-7890</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
-
-            <div class="info">
-                <h2>Our Office</h2>
-                <div class="info-button">
-                    <p>Address: 123 AI Tech Avenue, Techville, 54321</p>
-                    <button>
-                        <p>+1 (123) 456-7890</p>
-                        <img src="../../../public/img/topstrelka.svg" alt="">
-                    </button>
-                </div>
-            </div>
-
-            <div class="info">
-                <h2>Connect with Us</h2>
-                <div class="info-button res-wrap">
-                    <span>
-                        <img src="../../../public/img/twitter.svg" alt="">
-                    </span>
-                    <span>
-                        <img src="../../../public/img/meida.svg" alt="">
-                    </span>
-                    <span>
-                        <img src="../../../public/img/linkedin.svg" alt="">
-                    </span>
-                </div>
-            </div>
+  <Container class="container">
+    <div class="adres-info-wrap">
+      <div class="info">
+        <h2>{{ $t("contact.general") }}</h2>
+        <div class="info-button">
+          <button>
+            <p>{{ $t("contact.email") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
+          <button>
+            <p>{{ $t("contact.phone") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
         </div>
-    </Container>
+      </div>
+
+      <div class="info">
+        <h2>{{ $t("contact.support") }}</h2>
+        <div class="info-button">
+          <button>
+            <p>{{ $t("contact.email") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
+          <button>
+            <p>{{ $t("contact.phone") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="info">
+        <h2>{{ $t("contact.office") }}</h2>
+        <div class="info-button">
+          <p>{{ $t("contact.address") }}</p>
+          <button>
+            <p>{{ $t("contact.phone") }}</p>
+            <img src="../../../public/img/topstrelka.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="info">
+        <h2>{{ $t("contact.connect") }}</h2>
+        <div class="info-button res-wrap">
+          <span>
+            <img src="../../../public/img/twitter.svg" alt="">
+          </span>
+          <span>
+            <img src="../../../public/img/meida.svg" alt="">
+          </span>
+          <span>
+            <img src="../../../public/img/linkedin.svg" alt="">
+          </span>
+        </div>
+      </div>
+    </div>
+  </Container>
 </template>
+
 
 <style scoped>
 .adres-info-wrap {
@@ -88,7 +89,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 18px 24px;
+    padding: 10px 24px;
     background-color: #1A1A1A;
     border: 1px solid #262626;
     border-radius: 8px;
@@ -99,10 +100,15 @@
     margin-top: 15px;
 }
 
+.info-button > button > p{
+    margin-top: 10px;
+}
+
 .info-button>p {
     color: #98989A;
     font-size: 16px;
     line-height: 150%;
+    margin-top: 20px;
 }
 
 .info-button>span {

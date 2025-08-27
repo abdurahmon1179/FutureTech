@@ -3,63 +3,57 @@
         <Container class="title-container">
             <div class="post-title">
                 <div class="post-title-text">
-                    <div>A Knowledge Treasure Trove</div>
-                    <p>Explore FutureTech's In-Depth Blog Posts</p>
+                    <div>{{ $t('post.subtitle') }}</div>
+                    <p>{{ $t('post.title') }}</p>
                 </div>
                 <div class="post-title-link">
                     <button>
-                        <router-link to="/third" class="link text-btn" active-class="active">View all blogs</router-link>
+                        <router-link to="/third" class="link text-btn" active-class="active">
+                            {{ $t('post.viewAll') }}
+                        </router-link>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
             </div>
         </Container>
     </section>
+
     <Container class="body-container">
         <div class="post-menu">
-            <div class="post-card active">  
-                <p>All</p>
-            </div>
-            <div class="post-card">
-                <p>Quantum Computing</p>
-            </div>
-            <div class="post-card">
-                <p>AI Ethics</p>
-            </div>
-            <div class="post-card">
-                <p>Space Exploration</p>
-            </div>
-            <div class="post-card">
-                <p>Biotechnology</p>
-            </div> 
-            <div class="post-card">
-                <p>Renewable Energy</p>
-            </div>
+            <div class="post-card active"><p>{{ $t('post.categories.all') }}</p></div>
+            <div class="post-card"><p>{{ $t('post.categories.quantum') }}</p></div>
+            <div class="post-card"><p>{{ $t('post.categories.ethics') }}</p></div>
+            <div class="post-card"><p>{{ $t('post.categories.space') }}</p></div>
+            <div class="post-card"><p>{{ $t('post.categories.bio') }}</p></div>
+            <div class="post-card"><p>{{ $t('post.categories.energy') }}</p></div>
         </div>
     </Container>
+
     <hr>
+
+    <!-- Post 1 -->
     <Container class="user-container">
         <div class="post-coment">
             <div class="post-person">
                 <div class="person-info">
                     <img src="../../../public/img/person.svg" alt="">
                     <div class="person-name">
-                        <h3>John Techson</h3>
-                        <p>Quantum Computing</p>
-                     </div>
+                        <h3>{{ $t('post.posts.0.author') }}</h3>
+                        <p>{{ $t('post.posts.0.category') }}</p>
+                    </div>
                 </div>
-                <div class="">
+                <div>
                     <button class="active-btn">
-                        <p>View Blog</p>
+                        <p>{{ $t('post.viewBlog') }}</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
             </div>
             <div class="post-coment-body">
                 <div class="post-text">
-                    <h3>October 15, 2023</h3>
-                    <h2>The Quantum Leap in Computing</h2>
-                    <p>Explore the revolution in quantum computing, its applications, and its potential impact on various industries.</p>
+                    <h3>{{ $t('post.posts.0.date') }}</h3>
+                    <h2>{{ $t('post.posts.0.title') }}</h2>
+                    <p>{{ $t('post.posts.0.desc') }}</p>
                     <div class="post-img">
                         <img src="../../../public/img/postimg.svg" alt="">
                         <img src="../../../public/img/postimg2.svg" alt="">
@@ -68,36 +62,39 @@
                 </div>
                 <div class="post-link">
                     <button>
-                        <p>View Blog</p>
+                        <p>{{ $t('post.viewBlog') }}</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
             </div>
         </div>
     </Container>
+
     <hr>
-     <Container class="user-container">
+
+    <!-- Post 2 -->
+    <Container class="user-container">
         <div class="post-coment">
             <div class="post-person">
                 <div class="person-info">
                     <img src="../../../public/img/person2.svg" alt="">
                     <div class="person-name">
-                        <h3>Sarah Ethicist</h3>
-                        <p>AI Ethics</p>
+                        <h3>{{ $t('post.posts.1.author') }}</h3>
+                        <p>{{ $t('post.posts.1.category') }}</p>
                     </div>
                 </div>
-                <div >
-                    <button class=" active-btn">
-                        <p>View Blog</p>
+                <div>
+                    <button class="active-btn">
+                        <p>{{ $t('post.viewBlog') }}</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
             </div>
             <div class="post-coment-body">
                 <div class="post-text">
-                    <h3>November 5, 2023</h3>
-                    <h2>The Ethical Dilemmas of AI</h2>
-                    <p>A deep dive into ethical challenges posed by AI, including bias, privacy, and transparency.</p>
+                    <h3>{{ $t('post.posts.1.date') }}</h3>
+                    <h2>{{ $t('post.posts.1.title') }}</h2>
+                    <p>{{ $t('post.posts.1.desc') }}</p>
                     <div class="post-img">
                         <img src="../../../public/img/post4.svg" alt="">
                         <img src="../../../public/img/postimg2.svg" alt="">
@@ -106,36 +103,39 @@
                 </div>
                 <div class="post-link">
                     <button>
-                        <p>View Blog</p>
+                        <p>{{ $t('post.viewBlog') }}</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
             </div>
         </div>
     </Container>
+
     <hr>
-     <Container class="user-container">
+
+    <!-- Post 3 -->
+    <Container class="user-container">
         <div class="post-coment">
             <div class="post-person">
                 <div class="person-info">
                     <img src="../../../public/img/person3.svg" alt="">
                     <div class="person-name">
-                        <h3>Astronomer X</h3>
-                        <p>Space Exploration</p>
+                        <h3>{{ $t('post.posts.2.author') }}</h3>
+                        <p>{{ $t('post.posts.2.category') }}</p>
                     </div>
                 </div>
-                <div >
-                    <button class=" active-btn">
-                        <p>View Blog</p>
+                <div>
+                    <button class="active-btn">
+                        <p>{{ $t('post.viewBlog') }}</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
             </div>
             <div class="post-coment-body">
                 <div class="post-text">
-                    <h3>December 10, 2023</h3>
-                    <h2>The Mars Colonization Challenge</h2>
-                    <p>Exploring the technical and logistical challenges of human colonization on Mars.</p>
+                    <h3>{{ $t('post.posts.2.date') }}</h3>
+                    <h2>{{ $t('post.posts.2.title') }}</h2>
+                    <p>{{ $t('post.posts.2.desc') }}</p>
                     <div class="post-img">
                         <img src="../../../public/img/post4.svg" alt="">
                         <img src="../../../public/img/postimg2.svg" alt="">
@@ -144,14 +144,15 @@
                 </div>
                 <div class="post-link">
                     <button>
-                        <p>View Blog</p>
+                        <p>{{ $t('post.viewBlog') }}</p>
                         <img src="../../../public/img/topstrelka.svg" alt="">
                     </button>
                 </div>
             </div>
         </div>
     </Container>
-</template> 
+</template>
+
 
 <style scoped>
 .active-btn{
@@ -189,9 +190,13 @@
     gap: 10px;
     background-color: #141414;
     border: 1px solid #262626;
-    padding: 18px 24px;
+    padding: 10px 24px;
     border-radius: 12px;
     cursor: pointer;
+}
+.post-title-link > button > p{
+    margin-top: 10px;
+    color: red;
 }
 .text-btn{
     text-decoration: none;
@@ -278,7 +283,8 @@ hr{
 .post-link > button{
     display: flex;
     align-items: center;
-    padding: 18px 24px;
+    justify-content: center;
+    padding: 10px 24px;
     gap: 10px;
     background-color: #141414;
     border: 1px solid #262626;
@@ -286,6 +292,9 @@ hr{
     color: #98989A;
     font-family: Inter;
     cursor: pointer;
+}
+.post-link > button > p{
+    margin-top: 12px;
 }
 .post-coment{
     display: flex;

@@ -1,15 +1,17 @@
 <template>
-   <Container class="container">
-        <div class="news-title">
-            <h1>Today's Headlines: Stay</h1>
-            <div>
-                <h1>Informed</h1>
-                <p>Explore the latest news from around the world. We bring you up-to-the-minute updates on the most significant events, trends, and stories. Discover the world through our news coverage.</p>
-            </div>
-        </div>
-    </Container>
-    <hr>
+  <Container class="container">
+    <div class="news-title">
+      <h1>{{ $t("newsPage.headlineTitle") }}</h1>
+      <div>
+        <h1>{{ $t("newsPage.headlineSubTitle") }}</h1>
+        <p>{{ $t("newsPage.headlineText") }}</p>
+      </div>
+
+    </div>
+  </Container>
+  <hr>
 </template>
+
 
 <style scoped>
     .news-title{
@@ -90,4 +92,8 @@ hr{
 
 <script setup>
 import Container from "../layout/index.vue"
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+
 </script>
