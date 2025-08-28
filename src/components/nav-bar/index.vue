@@ -53,19 +53,24 @@
   <transition name="slide">
     <div class="mobile-nav" v-if="menuOpen">
       <div class="mobile-nav-inner">
-        <a-dropdown class="language mb-lang">
-          <a class="ant-dropdown-link" @click.prevent>
-            {{ currentLang }}
-            <DownOutlined />
-          </a>
-          <template #overlay>
-            <a-menu>
-              <a-menu-item key="uz" @click="changeLang('uz')">UZ</a-menu-item>
-              <a-menu-item key="ru" @click="changeLang('ru')">RU</a-menu-item>
-              <a-menu-item key="en" @click="changeLang('en')">EN</a-menu-item>
-            </a-menu>
-          </template>
-        </a-dropdown>
+        <a-dropdown
+  class="language mb-lang"
+  trigger="click"
+  :getPopupContainer="triggerNode => triggerNode.parentNode"
+>
+  <a class="ant-dropdown-link" @click.prevent>
+    {{ currentLang }}
+    <DownOutlined />
+  </a>
+  <template #overlay>
+    <a-menu>
+      <a-menu-item key="uz" @click="changeLang('uz')">UZ</a-menu-item>
+      <a-menu-item key="ru" @click="changeLang('ru')">RU</a-menu-item>
+      <a-menu-item key="en" @click="changeLang('en')">EN</a-menu-item>
+    </a-menu>
+  </template>
+</a-dropdown>
+
         <router-link to="/" class="m-link" @click="closeMenu">{{ $t('navbar.home') }}</router-link>
         <router-link to="/second" class="m-link" @click="closeMenu">{{ $t('navbar.news') }}</router-link>
         <router-link to="/podcast" class="m-link" @click="closeMenu">{{ $t('navbar.podcasts') }}</router-link>
