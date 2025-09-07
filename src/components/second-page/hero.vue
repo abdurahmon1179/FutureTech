@@ -1,10 +1,10 @@
 <template>
   <Container class="container">
     <div class="news-title">
-      <h1>{{ t('news.newsTitle1') }}</h1>
+      <h1>{{ t('newsPage.newsTitle1') }}</h1>
       <div>
-        <h1>{{ t('news.newsTitle2') }}</h1>
-        <p>{{ t('news.newsDescription') }}</p>
+        <h1>{{ t('newsPage.newsTitle2') }}</h1>
+        <p>{{ t('newsPage.newsDescription') }}</p>
       </div>
     </div>
   </Container>
@@ -15,23 +15,23 @@
     <div class="news-card-wrapper">
       <img src="../../../public/img/newspage1.svg" alt="" />
       <div class="card-content">
-        <h2>{{ t('news.mainNewsTitle') }}</h2>
-        <p>{{ t('news.mainNewsDescription') }}</p>
+        <h2>{{ t('newsPage.mainNewsTitle') }}</h2>
+        <p>{{ t('newsPage.mainNewsDescription') }}</p>
 
         <div class="news-info">
           <div class="info">
-            <p>{{ t('news.category') }}</p>
-            <h4>{{ t('news.environment') }}</h4>
+            <p>{{ t('newsPage.category') }}</p>
+            <h4>{{ t('newsPage.environment') }}</h4>
           </div>
 
           <div class="info">
-            <p>{{ t('news.publicationDate') }}</p>
-            <h4>{{ t('news.publicationDateValue') }}</h4>
+            <p>{{ t('newsPage.publicationDate') }}</p>
+            <h4>{{ t('newsPage.publicationDateValue') }}</h4>
           </div>
 
           <div class="info">
-            <p>{{ t('news.author') }}</p>
-            <h4>{{ t('news.authorName') }}</h4>
+            <p>{{ t('newsPage.author') }}</p>
+            <h4>{{ t('newsPage.authorName') }}</h4>
           </div>
         </div>
 
@@ -40,7 +40,7 @@
             <img src="../../../public/img/newslike.svg" alt="" />
             <img src="../../../public/img/newsshare.svg" alt="" />
           </div>
-          <button>{{ t('news.readMore') }}</button>
+          <button>{{ t('newsPage.readMore') }}</button>
         </div>
       </div>
     </div>
@@ -52,15 +52,15 @@
     <div class="news-wrapper">
       <div class="card-news">
         <img src="../../../public/img/new.svg" alt="" />
-        <p>{{ t('news.cardNewsTitle1') }}</p>
-        <span>{{ t('news.politics') }}</span>
+        <p>{{ t('newsPage.cardNewsTitle1') }}</p>
+        <span>{{ t('newsPage.politics') }}</span>
         <div class="card-news-active">
           <div>
             <img src="../../../public/img/newslike.svg" alt="" />
             <img src="../../../public/img/newsshare.svg" alt="" />
           </div>
           <button>
-            <p>{{ t('news.readMore') }}</p>
+            <p>{{ t('newsPage.readMore') }}</p>
             <img src="../../../public/img/topstrelka.svg" alt="" />
           </button>
         </div>
@@ -68,15 +68,15 @@
 
       <div class="card-news">
         <img src="../../../public/img/new2.svg" alt="" />
-        <p>{{ t('news.cardNewsTitle2') }}</p>
-        <span>{{ t('news.politics') }}</span>
+        <p>{{ t('newsPage.cardNewsTitle2') }}</p>
+        <span>{{ t('newsPage.politics') }}</span>
         <div class="card-news-active">
           <div>
             <img src="../../../public/img/newslike.svg" alt="" />
             <img src="../../../public/img/newsshare.svg" alt="" />
           </div>
           <button>
-            <p>{{ t('news.readMore') }}</p>
+            <p>{{ t('newsPage.readMore') }}</p>
             <img src="../../../public/img/topstrelka.svg" alt="" />
           </button>
         </div>
@@ -84,15 +84,15 @@
 
       <div class="card-news">
         <img src="../../../public/img/new3.svg" alt="" />
-        <p>{{ t('news.cardNewsTitle3') }}</p>
-        <span>{{ t('news.politics') }}</span>
+        <p>{{ t('newsPage.cardNewsTitle3') }}</p>
+        <span>{{ t('newsPage.politics') }}</span>
         <div class="card-news-active">
           <div>
             <img src="../../../public/img/newslike.svg" alt="" />
             <img src="../../../public/img/newsshare.svg" alt="" />
           </div>
           <button>
-            <p>{{ t('news.readMore') }}</p>
+            <p>{{ t('newsPage.readMore') }}</p>
             <img src="../../../public/img/topstrelka.svg" alt="" />
           </button>
         </div>

@@ -1,10 +1,10 @@
 <template>
   <Container class="container">
     <div class="news-title">
-      <h1>{{ $t("news.unlock") }}</h1>
+      <h1>{{ $t("stats.unlock") }}</h1>
       <div>
-        <h1>{{ $t("news.knowledge") }}</h1>
-        <p>{{ $t("news.explore") }}</p>
+        <h1>{{ $t("stats.knowledge") }}</h1>
+        <p>{{ $t("stats.explore") }}</p>
       </div>
     </div>
   </Container>
@@ -15,32 +15,33 @@
     <div class="card-wrapper">
       <div class="card card1">
         <h3>300 <span>+</span></h3>
-        <p>{{ $t("news.resources") }}</p>
+        <p>{{ $t("stats.resources") }}</p>
       </div>
 
       <img src="../../../public/img/row.svg" alt="" />
 
       <div class="card card2">
         <h3>12k <span>+</span></h3>
-        <p>{{ $t("news.downloads") }}</p>
+        <p>{{ $t("stats.downloads") }}</p>
       </div>
 
       <img src="../../../public/img/row.svg" alt="" />
 
       <div class="card card3">
         <h3>10k <span>+</span></h3>
-        <p>{{ $t("news.users") }}</p>
+        <p>{{ $t("stats.users") }}</p>
       </div>
 
       <img src="../../../public/img/row.svg" alt="" />
 
       <div class="card card3">
         <h3>100 <span>+</span></h3>
-        <p>{{ $t("news.countries") }}</p>
+        <p>{{ $t("stats.countries") }}</p>
       </div>
     </div>
   </Container>
 </template>
+
 
 
 <style scoped>

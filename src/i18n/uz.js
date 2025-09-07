@@ -386,7 +386,40 @@ export default {
   "faq": {
     "title": "AI Podkastlar bilan bog‘laning",
     "desc": "Agar savolingiz FAQ bo‘limida bo‘lmasa, biz bilan shaxsan bog‘laning, biz muammoni hal qilamiz."
+  },
+  "newsPage": {
+    "newsTitle1": "So‘nggi",
+    "newsTitle2": "Yangiliklar",
+    "newsDescription": "Dunyo bo‘yicha eng so‘nggi yangiliklardan xabardor bo‘ling.",
+    "mainNewsTitle": "Iqlim o‘zgarishi ekotizimlarga ta’sir qilmoqda",
+    "mainNewsDescription": "Haroratning ko‘tarilishi va ekologik muammolar sayyoramizni o‘zgartirmoqda.",
+    "category": "Kategoriya",
+    "environment": "Atrof-muhit",
+    "publicationDate": "Chop etilgan sana",
+    "publicationDateValue": "2025-yil 4-sentabr",
+    "author": "Muallif",
+    "authorName": "John Doe",
+    "readMore": "Batafsil o‘qish",
+    "cardNewsTitle1": "Hukumat yangi islohotlarni e’lon qildi",
+    "cardNewsTitle2": "Uchinchi chorakda iqtisodiy o‘sish sekinlashdi",
+    "cardNewsTitle3": "Yangi ta’lim siyosatlari kuchga kirdi",
+    "politics": "Siyosat"
+  },
+  "stats": {
+    "unlock": "Ochish",
+    "knowledge": "Bilim dunyosini",
+    "explore": "Eng foydali manbalarni kashf qiling va bilimlaringizni oshiring.",
+    "resources": "Resurslar",
+    "downloads": "Yuklab olishlar",
+    "users": "Foydalanuvchilar",
+    "countries": "Davlatlar"
+  },
+  "headlineSection": {
+    "headlineTitle": "Sarlavha",
+    "headlineSubTitle": "Eng muhim yangiliklar",
+    "headlineText": "Eng muhim voqealar va dolzarb yangiliklardan xabardor bo‘ling."
   }
+
 }
 
 

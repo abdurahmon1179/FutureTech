@@ -386,5 +386,37 @@ export default {
   "faq": {
     "title": "Свяжитесь с AI Podcasts",
     "desc": "Если вопроса нет в разделе FAQ, свяжитесь с нами лично, мы решим ваши сомнения."
+  },
+  "newsPage": {
+    "newsTitle1": "Последние",
+    "newsTitle2": "Новости",
+    "newsDescription": "Будьте в курсе последних событий со всего мира.",
+    "mainNewsTitle": "Изменение климата влияет на экосистемы",
+    "mainNewsDescription": "Повышение температуры и экологические проблемы меняют нашу планету.",
+    "category": "Категория",
+    "environment": "Окружающая среда",
+    "publicationDate": "Дата публикации",
+    "publicationDateValue": "4 сентября 2025 г.",
+    "author": "Автор",
+    "authorName": "John Doe",
+    "readMore": "Читать далее",
+    "cardNewsTitle1": "Правительство объявило новые реформы",
+    "cardNewsTitle2": "Экономический рост замедлился в третьем квартале",
+    "cardNewsTitle3": "Новые образовательные политики вступили в силу",
+    "politics": "Политика"
+  },
+  "stats": {
+    "unlock": "Откройте",
+    "knowledge": "Мир знаний",
+    "explore": "Откройте самые полезные ресурсы и расширяйте свои знания.",
+    "resources": "Ресурсы",
+    "downloads": "Загрузки",
+    "users": "Пользователи",
+    "countries": "Страны"
+  },
+  "headlineSection": {
+    "headlineTitle": "Заголовок",
+    "headlineSubTitle": "Главные новости",
+    "headlineText": "Будьте в курсе самых важных событий и актуальных новостей."
   }
 }

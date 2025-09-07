@@ -386,5 +386,37 @@ export default {
   "faq": {
     "title": "Get in Touch with AI Podcasts",
     "desc": "If the question is not available on our FAQ section, feel free to contact us personally, we will resolve your respective doubts."
+  },
+  "newsPage": {
+    "newsTitle1": "Latest",
+    "newsTitle2": "News",
+    "newsDescription": "Stay informed with the latest news from around the world.",
+    "mainNewsTitle": "Climate change is affecting ecosystems",
+    "mainNewsDescription": "Rising temperatures and environmental issues are transforming our planet.",
+    "category": "Category",
+    "environment": "Environment",
+    "publicationDate": "Publication date",
+    "publicationDateValue": "September 4, 2025",
+    "author": "Author",
+    "authorName": "John Doe",
+    "readMore": "Read more",
+    "cardNewsTitle1": "Government announced new reforms",
+    "cardNewsTitle2": "Economic growth slowed in the third quarter",
+    "cardNewsTitle3": "New education policies came into force",
+    "politics": "Politics"
+  },
+  "stats": {
+    "unlock": "Unlock",
+    "knowledge": "World of knowledge",
+    "explore": "Discover the most useful resources and expand your knowledge.",
+    "resources": "Resources",
+    "downloads": "Downloads",
+    "users": "Users",
+    "countries": "Countries"
+  },
+  "headlineSection": {
+    "headlineTitle": "Headline",
+    "headlineSubTitle": "Top Stories",
+    "headlineText": "Stay updated with the most important events and breaking news."
   }
 }

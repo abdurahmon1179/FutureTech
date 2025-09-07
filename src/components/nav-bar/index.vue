@@ -246,7 +246,7 @@
 
 
 
-@media(max-width:980px) {
+@media(max-width:1000px) {
   .nav-bar-wrapper>ul {
     display: none;
   }
