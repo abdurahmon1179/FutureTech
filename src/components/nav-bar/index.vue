@@ -157,8 +157,8 @@
   padding: 14px 24px;
   background-color: #FFD11A;
   color: #141414;
+  border: 1px solid transparent; /* faqat shuni qoldiring */
   border-radius: 10px;
-  border: none;
   font-family: Inter;
   font-weight: 500;
   font-size: 17px;
@@ -170,6 +170,7 @@
   background-color: transparent;
   color: white;
 }
+
 
 .burger-menu {
   display: none;
